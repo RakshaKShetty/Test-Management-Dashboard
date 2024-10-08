@@ -41,7 +41,7 @@ export default {
 		 
 		 const progress = (passedcount/totalcount )*100
 		 
-		 if ( Number.isInteger(progress) )
+		 if (progress > 0 )
 			 return Math.floor(progress)
 		
 		else return 0
