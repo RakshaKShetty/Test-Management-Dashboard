@@ -1,0 +1,61 @@
+{
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 30,
+  "boxShadow": "none",
+  "defaultOptionValue": "Mac",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [
+    {
+      "key": "sourceData"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "isDisabled": false,
+  "isFilterable": true,
+  "isLoading": false,
+  "isRequired": false,
+  "isVisible": true,
+  "key": "li75yrbqxs",
+  "labelAlignment": "left",
+  "labelPosition": "Top",
+  "labelText": "OS",
+  "labelTextSize": "0.875rem",
+  "labelWidth": 5,
+  "leftColumn": 22,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "mobileBottomRow": 30,
+  "mobileLeftColumn": 22,
+  "mobileRightColumn": 42,
+  "mobileTopRow": 23,
+  "needsErrorInfo": false,
+  "optionLabel": "name",
+  "optionValue": "code",
+  "originalBottomRow": 30,
+  "originalTopRow": 23,
+  "parentColumnSpace": 12.399999999999999,
+  "parentId": "3dr22uungm",
+  "parentRowSpace": 10,
+  "placeholderText": "Select OS",
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 42,
+  "serverSideFiltering": false,
+  "sourceData": "[\n  {\n    \"name\": \"Mac\",\n    \"code\": \"Mac\"\n  },\n  {\n    \"name\": \"Windows\",\n    \"code\": \"Windows\"\n  },\n\t{\n    \"name\": \"Linux\",\n    \"code\": \"Linux\"\n  }\n]",
+  "topRow": 23,
+  "type": "SELECT_WIDGET",
+  "version": 1,
+  "widgetId": "bbzxcy6r18",
+  "widgetName": "TR_OS"
+}

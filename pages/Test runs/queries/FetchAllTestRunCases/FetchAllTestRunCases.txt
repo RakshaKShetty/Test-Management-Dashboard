@@ -1,0 +1,1 @@
+SELECT * FROM public."test_run_cases" order by run_id DESC;

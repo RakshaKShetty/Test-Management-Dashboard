@@ -1,0 +1,61 @@
+{
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 30,
+  "boxShadow": "none",
+  "defaultOptionValue": "Deploy-Preview",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [
+    {
+      "key": "sourceData"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "isDisabled": false,
+  "isFilterable": true,
+  "isLoading": false,
+  "isRequired": true,
+  "isVisible": true,
+  "key": "li75yrbqxs",
+  "labelAlignment": "left",
+  "labelPosition": "Top",
+  "labelText": "Environment",
+  "labelTextSize": "0.875rem",
+  "labelWidth": 5,
+  "leftColumn": 42,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "mobileBottomRow": 30,
+  "mobileLeftColumn": 22,
+  "mobileRightColumn": 42,
+  "mobileTopRow": 23,
+  "needsErrorInfo": false,
+  "optionLabel": "name",
+  "optionValue": "code",
+  "originalBottomRow": 30,
+  "originalTopRow": 23,
+  "parentColumnSpace": 12.399999999999999,
+  "parentId": "3dr22uungm",
+  "parentRowSpace": 10,
+  "placeholderText": "Select Environment",
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 62,
+  "serverSideFiltering": false,
+  "sourceData": "[\n  {\n    \"name\": \"Release\",\n    \"code\": \"Release\"\n  },\n  {\n    \"name\": \"Deploy-Preview\",\n    \"code\": \"Deploy-Preview\"\n  },\n\t{\n    \"name\": \"Production\",\n    \"code\": \"Production\"\n  },\n\t{\n    \"name\": \"Air-Gapped\",\n    \"code\": \"Air-Gapped\"\n  }\n\t\n]",
+  "topRow": 23,
+  "type": "SELECT_WIDGET",
+  "version": 1,
+  "widgetId": "2iqfvtgw50",
+  "widgetName": "TR_Environment"
+}

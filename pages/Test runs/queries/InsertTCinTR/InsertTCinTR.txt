@@ -1,0 +1,2 @@
+INSERT INTO public."test_run_cases" ("run_id", "case_id", "status", "executed_by" )
+  VALUES ({{this.params.runID}}, {{this.params.caseID}}, 'Not Started', 1 );

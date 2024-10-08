@@ -1,0 +1,9 @@
+UPDATE public."test_runs" SET
+    "run_name" = '{{TRNameCopy.text}}',
+    "pr_number" = '{{PRNumberCopy.text}}',
+  
+ 		"description" = '{{TRDescCopy.text}}',
+    "browser" = '{{TR_browserCopy.text}}',
+    "os" = '{{TR_OSCopy.selectedOptionLabel}}',
+    "environment" = '{{TR_EnvironmentCopy.selectedOptionLabel}}'
+  WHERE 1 = 0; -- Specify a valid condition here. Removing the condition may update every row in the table!
