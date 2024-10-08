@@ -20,7 +20,7 @@
     }
   ],
   "dynamicTriggerPathList": [],
-  "isDisabled": false,
+  "isDisabled": true,
   "isFilterable": true,
   "isLoading": false,
   "isRequired": false,
@@ -28,7 +28,7 @@
   "key": "li75yrbqxs",
   "labelAlignment": "left",
   "labelPosition": "Top",
-  "labelText": "OS",
+  "labelText": "Default OS",
   "labelTextSize": "0.875rem",
   "labelWidth": 5,
   "leftColumn": 22,

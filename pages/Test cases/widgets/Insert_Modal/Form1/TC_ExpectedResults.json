@@ -49,6 +49,7 @@
   "showStepArrows": false,
   "topRow": 38,
   "type": "INPUT_WIDGET_V2",
+  "validation": "",
   "version": 2,
   "widgetId": "7wirvpkekw",
   "widgetName": "TC_ExpectedResults"
