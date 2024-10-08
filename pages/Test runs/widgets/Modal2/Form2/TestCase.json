@@ -2,7 +2,7 @@
   "accentColor": "{{appsmith.theme.colors.primaryColor}}",
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 60,
+  "bottomRow": 89,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
   "childStylesheet": {
     "button": {
@@ -148,9 +148,9 @@
   "onSearchTextChanged": "",
   "onSort": "",
   "originalBottomRow": 60,
-  "originalTopRow": 14,
+  "originalTopRow": 15,
   "parentColumnSpace": 12.021583557128906,
-  "parentId": "ye2sq3u71s",
+  "parentId": "pctwlhlpqe",
   "parentRowSpace": 10,
   "primaryColumnId": "id",
   "primaryColumns": {
@@ -400,11 +400,11 @@
   "showInlineEditingOptionDropdown": true,
   "tableData": "{{FetchTCs.data}}",
   "textSize": "0.875rem",
-  "topRow": 14,
+  "topRow": 44,
   "totalRecordsCount": "100",
   "type": "TABLE_WIDGET_V2",
   "version": 3,
   "verticalAlignment": "CENTER",
-  "widgetId": "y2eip1oj6t",
+  "widgetId": "9op72cuyrs",
   "widgetName": "TestCase"
 }

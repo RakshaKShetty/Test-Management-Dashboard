@@ -1,23 +1,29 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 98,
+  "bottomRow": 97,
   "boxShadow": "none",
   "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
   "buttonStyle": "PRIMARY_BUTTON",
   "buttonVariant": "PRIMARY",
-  "disabledWhenInvalid": false,
+  "disabledWhenInvalid": true,
   "dynamicBindingPathList": [
     {
       "key": "buttonColor"
     },
     {
       "key": "borderRadius"
+    },
+    {
+      "key": "isDisabled"
     }
   ],
   "dynamicPropertyPathList": [
     {
       "key": "onClick"
+    },
+    {
+      "key": "isDisabled"
     }
   ],
   "dynamicTriggerPathList": [
@@ -26,11 +32,11 @@
     }
   ],
   "isDefaultClickDisabled": true,
-  "isDisabled": false,
+  "isDisabled": "{{!(TRName.text.length>0 && TestCase.selectedRows.length>0)}}",
   "isLoading": false,
   "isVisible": true,
   "key": "ge27e6c97b",
-  "leftColumn": 47,
+  "leftColumn": 48,
   "minWidth": 120,
   "mobileBottomRow": 22,
   "mobileLeftColumn": 47,
@@ -38,9 +44,9 @@
   "mobileTopRow": 18,
   "needsErrorInfo": false,
   "onClick": "{{TestRunManagement.insertTR().then(() => {\n  showAlert('Test Run Added Successfully', '');\n  resetWidget(\"Modal2\", true);\n  closeModal(Modal2.name);\n  Fetch_TRs.run();\n});}}",
-  "originalBottomRow": 96,
-  "originalTopRow": 92,
-  "parentId": "3dr22uungm",
+  "originalBottomRow": 68,
+  "originalTopRow": 64,
+  "parentId": "pctwlhlpqe",
   "placement": "CENTER",
   "recaptchaType": "V3",
   "renderMode": "CANVAS",
@@ -48,9 +54,9 @@
   "responsiveBehavior": "hug",
   "rightColumn": 63,
   "text": "Create Run",
-  "topRow": 94,
+  "topRow": 93,
   "type": "BUTTON_WIDGET",
   "version": 1,
-  "widgetId": "o57s4uoj6e",
+  "widgetId": "4ct09ano7n",
   "widgetName": "Button5"
 }
