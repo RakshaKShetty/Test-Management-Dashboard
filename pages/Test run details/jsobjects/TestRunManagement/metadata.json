@@ -1,0 +1,20 @@
+{
+  "gitSyncId": "6705065fd4c7d74e2813972c_e751f5d9-5518-48c5-816a-a831b6c7b8a1",
+  "id": "Test run details_TestRunManagement",
+  "unpublishedCollection": {
+    "name": "TestRunManagement",
+    "pageId": "Test run details",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": [
+      {
+        "name": "myVar1",
+        "value": "[]"
+      },
+      {
+        "name": "myVar2",
+        "value": "{}"
+      }
+    ]
+  }
+}

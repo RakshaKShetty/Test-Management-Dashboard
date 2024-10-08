@@ -1,0 +1,3 @@
+UPDATE test_run_cases
+SET status = '{{this.params.tcstatus}}'
+WHERE run_case_id = '{{this.params.trid}}';
