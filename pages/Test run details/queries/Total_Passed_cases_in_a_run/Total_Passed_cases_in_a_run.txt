@@ -1,0 +1,1 @@
+SELECT count(*) as passedcount FROM test_run_cases where status = 'Passed' AND run_id = {{this.params.runid}} GROUP By run_id ;

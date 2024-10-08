@@ -24,6 +24,10 @@
     {
       "id": "Test runs",
       "isDefault": false
+    },
+    {
+      "id": "Test run details",
+      "isDefault": false
     }
   ],
   "unpublishedApplicationDetail": {

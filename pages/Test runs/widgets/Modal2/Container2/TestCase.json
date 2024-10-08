@@ -25,17 +25,21 @@
     "case_id",
     "name",
     "description",
-    "steps",
-    "expected_results",
     "automated_status",
-    "label_name"
+    "label_name",
+    "steps",
+    "expected_results"
   ],
   "columnSizeMap": {
     "status": 75,
     "step": 62,
     "task": 245
   },
-  "columnUpdatedAt": 1728292976817,
+  "columnUpdatedAt": 1728384865400,
+  "columnWidthMap": {
+    "description": 262,
+    "name": 135
+  },
   "defaultPageSize": 0,
   "defaultSelectedRowIndex": "0",
   "delimiter": ",",
