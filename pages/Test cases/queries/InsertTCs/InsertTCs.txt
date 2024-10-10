@@ -1,2 +1,2 @@
 		INSERT INTO public."test_cases" ("name", "description", "steps", "expected_results","automated_status", "label_name")
-  VALUES ( '{{TCName.text}}', '{{TCDesc.text}}', '{{TC_Steps.text}}', '{{TC_ExpectedResults.text}}','{{TCAutomated.selectedOptionLabel.toString()}}', '{{TCTags.selectedOptionLabel}}');
+  VALUES ( $${{TCName.text}}$$, $${{TCDesc.text}}$$, $${{TC_Steps.text}}$$, $${{TC_ExpectedResults.text}}$$,'{{TCAutomated.selectedOptionLabel.toString()}}', '{{TCTags.selectedOptionLabel}}');
