@@ -1,11 +1,11 @@
 {
-  "gitSyncId": "66fe5b3e3bcd8736322593bd_0183ef1f-4c23-4670-ac3c-b00f0b193ff4",
-  "id": "Test runs_UpdateTRs",
+  "gitSyncId": "6705065fd4c7d74e2813972c_45a62570-71a4-4420-9d20-b5d198179246",
+  "id": "Test cases_Query1",
   "pluginId": "postgres-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "UPDATE public.\"test_runs\" SET\n    \"run_name\" = '{{TRNameCopy.text}}',\n    \"pr_number\" = '{{PRNumberCopy.text}}',\n  \n \t\t\"description\" = '{{TRDescCopy.text}}',\n    \"browser\" = '{{TR_browserCopy.text}}',\n    \"os\" = '{{TR_OSCopy.selectedOptionLabel}}',\n    \"environment\" = '{{TR_EnvironmentCopy.selectedOptionLabel}}'\n  WHERE run_id = {{data_tableCopy.selectedRow.run_id}};",
+      "body": "SELECT *\nFROM public.test_cases\nWHERE \n   ( {{JSObject1.queryTransform.data}} = 0\n\t\t\t OR \n    label_name = ANY(ARRAY[{{JSObject1.queryTransform.data}}]))\n\t\t\nORDER BY case_id\nLIMIT {{data_table.pageSize}} OFFSET {{data_table.pageOffset}}\n\n\n\n",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
@@ -28,8 +28,8 @@
       }
     ],
     "executeOnLoad": false,
-    "name": "UpdateTRs",
-    "pageId": "Test runs",
+    "name": "Query1",
+    "pageId": "Test cases",
     "userSetOnLoad": false
   }
 }

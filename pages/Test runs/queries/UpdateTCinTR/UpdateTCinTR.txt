@@ -1,0 +1,7 @@
+UPDATE public."test_run_cases"
+SET 
+    "status" = 'Not Started',  -- Change this to the desired status
+    "executed_by" = 1        -- Change this to the desired user ID
+WHERE 
+    "run_id" = {{this.params.runID}} 
+    AND "case_id" = {{this.params.caseID}};

@@ -6,4 +6,4 @@ UPDATE public."test_runs" SET
     "browser" = '{{TR_browserCopy.text}}',
     "os" = '{{TR_OSCopy.selectedOptionLabel}}',
     "environment" = '{{TR_EnvironmentCopy.selectedOptionLabel}}'
-  WHERE 1 = 0; -- Specify a valid condition here. Removing the condition may update every row in the table!
+  WHERE run_id = {{data_tableCopy.selectedRow.run_id}};

@@ -4,7 +4,7 @@
   "borderColor": "#E0DEDE",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": "1",
-  "bottomRow": 80,
+  "bottomRow": 161,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
   "canFreezeColumn": true,
   "childStylesheet": {
@@ -42,9 +42,11 @@
     "test_run_name",
     "pr_number",
     "tc_label",
-    "trc_id"
+    "trc_id",
+    "customColumn3",
+    "customColumn4"
   ],
-  "columnUpdatedAt": 1728389385252,
+  "columnUpdatedAt": 1728390197499,
   "columnWidthMap": {
     "tc_desc": 368.9375
   },
@@ -108,6 +110,24 @@
     },
     {
       "key": "primaryColumns.customColumn2.menuButtonLabel"
+    },
+    {
+      "key": "primaryColumns.customColumn3.boxShadow"
+    },
+    {
+      "key": "primaryColumns.customColumn3.borderRadius"
+    },
+    {
+      "key": "primaryColumns.customColumn3.menuColor"
+    },
+    {
+      "key": "primaryColumns.customColumn4.boxShadow"
+    },
+    {
+      "key": "primaryColumns.customColumn4.borderRadius"
+    },
+    {
+      "key": "primaryColumns.customColumn4.buttonColor"
     }
   ],
   "dynamicPropertyPathList": [
@@ -118,16 +138,13 @@
       "key": "primaryColumns.tc_status.onOptionChange"
     },
     {
+      "key": "primaryColumns.customColumn2.menuItems.menuItem77nnzejadw.onClick"
+    },
+    {
       "key": "primaryColumns.customColumn2.menuItems.menuItemblbcm5g6xt.onClick"
     },
     {
       "key": "primaryColumns.customColumn2.menuItems.menuItem4ezi3tjra0.onClick"
-    },
-    {
-      "key": "primaryColumns.customColumn2.menuItems.menuItemikhjxduckg.onClick"
-    },
-    {
-      "key": "primaryColumns.customColumn2.menuItems.menuItem77nnzejadw.onClick"
     }
   ],
   "dynamicTriggerPathList": [
@@ -145,6 +162,12 @@
     },
     {
       "key": "primaryColumns.customColumn2.menuItems.menuItemikhjxduckg.onClick"
+    },
+    {
+      "key": "primaryColumns.customColumn4.onClick"
+    },
+    {
+      "key": "primaryColumns.customColumn3.menuItems.menuItemodgnmtxui4.onClick"
     }
   ],
   "enableClientSideSearch": true,
@@ -167,10 +190,10 @@
   "mobileRightColumn": 34,
   "mobileTopRow": 28,
   "needsErrorInfo": false,
-  "originalBottomRow": 72,
-  "originalTopRow": 33,
+  "originalBottomRow": 208,
+  "originalTopRow": 160,
   "parentColumnSpace": 12.2333984375,
-  "parentId": "q0hy33fm98",
+  "parentId": "0",
   "parentRowSpace": 10,
   "primaryColumns": {
     "customColumn1": {
@@ -210,8 +233,8 @@
       "alias": "Update Status",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
-      "borderRadius": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( (appsmith.theme.borderRadius.appBorderRadius)))}}",
-      "boxShadow": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( \"none\"))}}",
+      "borderRadius": "{{Table1Copy.processedTableData.map((currentRow, currentIndex) => ( (appsmith.theme.borderRadius.appBorderRadius)))}}",
+      "boxShadow": "{{Table1Copy.processedTableData.map((currentRow, currentIndex) => ( \"none\"))}}",
       "buttonStyle": "rgb(3, 179, 101)",
       "columnType": "menuButton",
       "computedValue": "",
@@ -233,9 +256,9 @@
       "isVisible": true,
       "label": "Update Status",
       "labelColor": "#FFFFFF",
-      "menuButtonLabel": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow.tc_status))}}",
+      "menuButtonLabel": "{{Table1Copy.processedTableData.map((currentRow, currentIndex) => ( currentRow.tc_status))}}",
       "menuButtoniconName": "caret-down",
-      "menuColor": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( (appsmith.theme.colors.primaryColor)))}}",
+      "menuColor": "{{Table1Copy.processedTableData.map((currentRow, currentIndex) => ( (appsmith.theme.colors.primaryColor)))}}",
       "menuItems": {
         "menuItem4ezi3tjra0": {
           "id": "menuItem4ezi3tjra0",
@@ -285,12 +308,115 @@
       "verticalAlignment": "CENTER",
       "width": 150
     },
+    "customColumn3": {
+      "alias": "customColumn3",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "borderRadius": "{{Table1Copy.processedTableData.map((currentRow, currentIndex) => ( (appsmith.theme.borderRadius.appBorderRadius)))}}",
+      "boxShadow": "{{Table1Copy.processedTableData.map((currentRow, currentIndex) => ( \"none\"))}}",
+      "buttonStyle": "rgb(3, 179, 101)",
+      "columnType": "menuButton",
+      "computedValue": "",
+      "currencyCode": "USD",
+      "customAlias": "",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "horizontalAlignment": "LEFT",
+      "id": "customColumn3",
+      "index": 10,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": true,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "customColumn3",
+      "labelColor": "#FFFFFF",
+      "menuColor": "{{Table1Copy.processedTableData.map((currentRow, currentIndex) => ( (appsmith.theme.colors.primaryColor)))}}",
+      "menuItems": {
+        "menuItem2mpe7kbh94": {
+          "id": "menuItem2mpe7kbh94",
+          "index": 1,
+          "isDisabled": false,
+          "isVisible": true,
+          "label": "Menu Item121",
+          "widgetId": "sixa7f50zd"
+        },
+        "menuItem4d4chpi0hx": {
+          "id": "menuItem4d4chpi0hx",
+          "index": 2,
+          "isDisabled": false,
+          "isVisible": true,
+          "label": "Menu Item111",
+          "widgetId": "dr1751jwgz"
+        },
+        "menuItemodgnmtxui4": {
+          "id": "menuItemodgnmtxui4",
+          "index": 0,
+          "isDisabled": false,
+          "isVisible": true,
+          "label": "Menu Item1",
+          "onClick": "{{storeValue(\"\", \"\")}}",
+          "widgetId": "3ygb69xvms"
+        }
+      },
+      "menuItemsSource": "STATIC",
+      "notation": "standard",
+      "originalId": "customColumn3",
+      "sticky": "",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "customColumn4": {
+      "alias": "customColumn4",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "borderRadius": "{{Table1Copy.processedTableData.map((currentRow, currentIndex) => ( (appsmith.theme.borderRadius.appBorderRadius)))}}",
+      "boxShadow": "{{Table1Copy.processedTableData.map((currentRow, currentIndex) => ( \"none\"))}}",
+      "buttonColor": "{{Table1Copy.processedTableData.map((currentRow, currentIndex) => ( (appsmith.theme.colors.primaryColor)))}}",
+      "buttonStyle": "rgb(3, 179, 101)",
+      "columnType": "button",
+      "computedValue": "",
+      "currencyCode": "USD",
+      "customAlias": "",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "horizontalAlignment": "LEFT",
+      "id": "customColumn4",
+      "index": 10,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": true,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "customColumn4",
+      "labelColor": "#FFFFFF",
+      "notation": "standard",
+      "onClick": "{{storeValue(\"\", \"\")}}",
+      "originalId": "customColumn4",
+      "sticky": "",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
     "pr_number": {
       "alias": "pr_number",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
       "columnType": "text",
-      "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"pr_number\"]))}}",
+      "computedValue": "{{Table1Copy.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"pr_number\"]))}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,
@@ -322,7 +448,7 @@
       "allowSameOptionsInNewRow": true,
       "cellBackground": "",
       "columnType": "text",
-      "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"tc_autostatus\"]))}}",
+      "computedValue": "{{Table1Copy.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"tc_autostatus\"]))}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,
@@ -355,7 +481,7 @@
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
       "columnType": "text",
-      "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"tc_desc\"]))}}",
+      "computedValue": "{{Table1Copy.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"tc_desc\"]))}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,
@@ -387,7 +513,7 @@
       "allowSameOptionsInNewRow": true,
       "cellBackground": "",
       "columnType": "text",
-      "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"tc_er\"]))}}",
+      "computedValue": "{{Table1Copy.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"tc_er\"]))}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,
@@ -421,7 +547,7 @@
       "allowSameOptionsInNewRow": true,
       "cellBackground": "",
       "columnType": "text",
-      "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"tc_label\"]))}}",
+      "computedValue": "{{Table1Copy.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"tc_label\"]))}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,
@@ -454,7 +580,7 @@
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
       "columnType": "text",
-      "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"tc_name\"]))}}",
+      "computedValue": "{{Table1Copy.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"tc_name\"]))}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,
@@ -486,7 +612,7 @@
       "allowSameOptionsInNewRow": true,
       "cellBackground": "",
       "columnType": "select",
-      "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow.tc_status))}}",
+      "computedValue": "{{Table1Copy.processedTableData.map((currentRow, currentIndex) => ( currentRow.tc_status))}}",
       "currencyCode": "USD",
       "customAlias": "",
       "decimals": 0,
@@ -525,7 +651,7 @@
       "allowSameOptionsInNewRow": true,
       "cellBackground": "",
       "columnType": "text",
-      "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"tc_steps\"]))}}",
+      "computedValue": "{{Table1Copy.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"tc_steps\"]))}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,
@@ -558,7 +684,7 @@
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
       "columnType": "text",
-      "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"test_run_name\"]))}}",
+      "computedValue": "{{Table1Copy.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"test_run_name\"]))}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,
@@ -590,7 +716,7 @@
       "allowSameOptionsInNewRow": true,
       "cellBackground": "",
       "columnType": "number",
-      "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"trc_id\"]))}}",
+      "computedValue": "{{Table1Copy.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"trc_id\"]))}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,
@@ -626,11 +752,11 @@
   "showInlineEditingOptionDropdown": true,
   "tableData": "{{FetchTCsforIndividualTR.data}}",
   "textSize": "0.875rem",
-  "topRow": 32,
+  "topRow": 113,
   "totalRecordsCount": 0,
   "type": "TABLE_WIDGET_V2",
   "version": 2,
   "verticalAlignment": "CENTER",
-  "widgetId": "em6swm62qo",
-  "widgetName": "Table1"
+  "widgetId": "4ufmckls7z",
+  "widgetName": "Table1Copy"
 }

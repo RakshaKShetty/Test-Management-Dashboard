@@ -18,15 +18,16 @@ export default {
 	}
 	},*/
 	async updateTCsinTR () {
-		
-		const updatedTC = (Table1.updatedRows)
+		 
+	//	const updatedTC = (Table1.triggeredRow)
+	//	return updatedTC
 		
 	//return updatedTC[0].allFields
-		for (let i=0 ; i < updatedTC.length ;i++)
+		//for (let i=0 ; i < updatedTC.length ;i++)
 			
-			{
-				UpdateTestRunCases.run({tcstatus:updatedTC[i].allFields.tc_status , trid: updatedTC[i].allFields.trc_id})
-			} 
+		///	{
+			UpdateTestRunCases.run({tcstatus:Table1.triggeredRow.tc_status , trid: Table1.triggeredRow.trc_id})
+			
 		
 	},
 	async getTRprogess (runid=appsmith.URL.queryParams.trid)

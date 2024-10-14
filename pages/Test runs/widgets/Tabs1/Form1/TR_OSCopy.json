@@ -4,13 +4,16 @@
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 45,
   "boxShadow": "none",
-  "defaultOptionValue": "Mac",
+  "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( data_tableCopy.selectedRow.os))(TR_OSCopy.options, TR_OSCopy.serverSideFiltering) }}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
     },
     {
       "key": "borderRadius"
+    },
+    {
+      "key": "defaultOptionValue"
     }
   ],
   "dynamicHeight": "FIXED",
@@ -20,7 +23,7 @@
     }
   ],
   "dynamicTriggerPathList": [],
-  "isDisabled": false,
+  "isDisabled": true,
   "isFilterable": true,
   "isLoading": false,
   "isRequired": false,
@@ -47,7 +50,7 @@
   "parentColumnSpace": 12.399999999999999,
   "parentId": "g7eqbhv2n6",
   "parentRowSpace": 10,
-  "placeholderText": "Select OS",
+  "placeholderText": "",
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
   "rightColumn": 63,

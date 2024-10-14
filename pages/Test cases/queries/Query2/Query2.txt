@@ -1,0 +1,8 @@
+With LV As (
+Select ARRAY[{{JSObject1.queryTransform.data}}] AS Lablevalue
+)
+
+Select REPLACE(Lablevalue,"Git"," ") from LV
+
+
+

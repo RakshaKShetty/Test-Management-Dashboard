@@ -1,11 +1,11 @@
 {
-  "gitSyncId": "66fe5b3e3bcd8736322593bd_0183ef1f-4c23-4670-ac3c-b00f0b193ff4",
-  "id": "Test runs_UpdateTRs",
+  "gitSyncId": "6705065fd4c7d74e2813972c_97db3432-1c00-496f-ae6a-d87c00718a41",
+  "id": "Test runs_UpdateTCinTR",
   "pluginId": "postgres-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "UPDATE public.\"test_runs\" SET\n    \"run_name\" = '{{TRNameCopy.text}}',\n    \"pr_number\" = '{{PRNumberCopy.text}}',\n  \n \t\t\"description\" = '{{TRDescCopy.text}}',\n    \"browser\" = '{{TR_browserCopy.text}}',\n    \"os\" = '{{TR_OSCopy.selectedOptionLabel}}',\n    \"environment\" = '{{TR_EnvironmentCopy.selectedOptionLabel}}'\n  WHERE run_id = {{data_tableCopy.selectedRow.run_id}};",
+      "body": "UPDATE public.\"test_run_cases\"\nSET \n    \"status\" = 'Not Started',  -- Change this to the desired status\n    \"executed_by\" = 1        -- Change this to the desired user ID\nWHERE \n    \"run_id\" = {{this.params.runID}} \n    AND \"case_id\" = {{this.params.caseID}};",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
@@ -28,7 +28,7 @@
       }
     ],
     "executeOnLoad": false,
-    "name": "UpdateTRs",
+    "name": "UpdateTCinTR",
     "pageId": "Test runs",
     "userSetOnLoad": false
   }

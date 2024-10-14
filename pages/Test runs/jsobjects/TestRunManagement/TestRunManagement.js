@@ -60,5 +60,20 @@ export default {
 		 //return (passedcount/totalcount )*100
 		 
 	  
+	},
+	async updateTR () {
+		
+	let  currentID = 	await UpdateTRs.run()
+	const a =  currentID[0].run_id ;
+	
+	const selectedTC = (TestCase.selectedRows)
+	 for (let i = 0 ; i < selectedTC.length ; i++){
+		 
+		 {
+			UpdateTCinTR.run({runID: a , caseID:selectedTC[i].case_id }) 
+		 }
+	 
+	
 	}
+	},
 }

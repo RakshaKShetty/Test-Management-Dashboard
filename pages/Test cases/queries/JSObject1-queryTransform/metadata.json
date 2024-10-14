@@ -1,16 +1,20 @@
 {
-  "gitSyncId": "66fe5b3e3bcd8736322593bd_f6b2cc96-6be0-4f2e-a7f8-3d762b4a7fd2",
-  "id": "Test cases_JSObject1.myFun2",
+  "gitSyncId": "6705065fd4c7d74e2813972c_b7d8b46c-62ff-4a0d-b95d-0ba9cd9c783c",
+  "id": "Test cases_JSObject1.queryTransform",
   "pluginId": "js-plugin",
   "pluginType": "JS",
   "unpublishedAction": {
     "actionConfiguration": {
       "encodeParamsToggle": true,
-      "jsArguments": [],
+      "jsArguments": [
+        {
+          "name": "a",
+          "value": "{{[]}}"
+        }
+      ],
       "paginationType": "NONE",
       "timeoutInMillisecond": 10000
     },
-    "clientSideExecution": true,
     "collectionId": "Test cases_JSObject1",
     "confirmBeforeExecute": false,
     "datasource": {
@@ -23,9 +27,9 @@
         "key": "body"
       }
     ],
-    "executeOnLoad": false,
-    "fullyQualifiedName": "JSObject1.myFun2",
-    "name": "myFun2",
+    "executeOnLoad": true,
+    "fullyQualifiedName": "JSObject1.queryTransform",
+    "name": "queryTransform",
     "pageId": "Test cases",
     "userSetOnLoad": false
   }

@@ -1,11 +1,11 @@
 {
-  "gitSyncId": "66fe5b3e3bcd8736322593bd_0183ef1f-4c23-4670-ac3c-b00f0b193ff4",
-  "id": "Test runs_UpdateTRs",
+  "gitSyncId": "6705065fd4c7d74e2813972c_78bef8c2-2761-4441-9a28-b6a0546136f4",
+  "id": "Test cases_Query2",
   "pluginId": "postgres-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "UPDATE public.\"test_runs\" SET\n    \"run_name\" = '{{TRNameCopy.text}}',\n    \"pr_number\" = '{{PRNumberCopy.text}}',\n  \n \t\t\"description\" = '{{TRDescCopy.text}}',\n    \"browser\" = '{{TR_browserCopy.text}}',\n    \"os\" = '{{TR_OSCopy.selectedOptionLabel}}',\n    \"environment\" = '{{TR_EnvironmentCopy.selectedOptionLabel}}'\n  WHERE run_id = {{data_tableCopy.selectedRow.run_id}};",
+      "body": "With LV As (\nSelect ARRAY[{{JSObject1.queryTransform.data}}] AS Lablevalue\n)\n\nSelect REPLACE(Lablevalue,\"Git\",\" \") from LV\n\n\n\n",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
@@ -28,8 +28,8 @@
       }
     ],
     "executeOnLoad": false,
-    "name": "UpdateTRs",
-    "pageId": "Test runs",
+    "name": "Query2",
+    "pageId": "Test cases",
     "userSetOnLoad": false
   }
 }
