@@ -1,17 +1,12 @@
 {
-  "gitSyncId": "670e5426f395d0500c06975c_00501cb7-d4a0-4c3c-9d8b-317f59f1d7fb",
-  "id": "Test runs_JSObject1.queryTransform",
+  "gitSyncId": "670e5426f395d0500c06975c_77baed53-c42a-40e9-a5b6-cb7a2497ccd7",
+  "id": "Test runs_JSObject1.fetchAllTRCases",
   "pluginId": "js-plugin",
   "pluginType": "JS",
   "unpublishedAction": {
     "actionConfiguration": {
       "encodeParamsToggle": true,
-      "jsArguments": [
-        {
-          "name": "a",
-          "value": "{{FilterTags.selectedOptionLabels}}"
-        }
-      ],
+      "jsArguments": [],
       "paginationType": "NONE",
       "timeoutInMillisecond": 10000
     },
@@ -27,9 +22,9 @@
         "key": "body"
       }
     ],
-    "executeOnLoad": true,
-    "fullyQualifiedName": "JSObject1.queryTransform",
-    "name": "queryTransform",
+    "executeOnLoad": false,
+    "fullyQualifiedName": "JSObject1.fetchAllTRCases",
+    "name": "fetchAllTRCases",
     "pageId": "Test runs",
     "userSetOnLoad": false
   }

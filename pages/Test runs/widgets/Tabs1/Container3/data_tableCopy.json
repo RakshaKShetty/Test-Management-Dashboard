@@ -2,7 +2,7 @@
   "accentColor": "{{appsmith.theme.colors.primaryColor}}",
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 79,
+  "bottomRow": 119,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
   "childStylesheet": {
     "button": {
@@ -38,7 +38,7 @@
     "step": 62,
     "task": 245
   },
-  "columnUpdatedAt": 1729021582272,
+  "columnUpdatedAt": 1729026053567,
   "columnWidthMap": {
     "Owner": 94,
     "Priority": 120,
@@ -136,6 +136,12 @@
     },
     {
       "key": "onPageChange"
+    },
+    {
+      "key": "onRowSelected"
+    },
+    {
+      "key": "primaryColumns.customColumn1.onClick"
     }
   ],
   "dynamicTriggerPathList": [
@@ -150,6 +156,9 @@
     },
     {
       "key": "primaryColumns.customColumn1.onClick"
+    },
+    {
+      "key": "onRowSelected"
     }
   ],
   "enableClientSideSearch": true,
@@ -159,7 +168,7 @@
   "iconSVG": "/static/media/icon.db8a9cbd.svg",
   "isLoading": false,
   "isSortable": true,
-  "isVisible": "true",
+  "isVisible": true,
   "isVisibleDownload": false,
   "isVisibleFilters": false,
   "isVisiblePagination": true,
@@ -170,6 +179,7 @@
   "leftColumn": 0,
   "multiRowSelection": false,
   "onPageChange": "{{Fetch_TRs.run();\nTR_Count.run()}}",
+  "onRowSelected": "{{FetchTCCopy.run().then(() => {\n  FetchTCsforIndividualTR.run();\n});}}",
   "onSearchTextChanged": "",
   "onSort": "",
   "parentColumnSpace": 2.666015625,

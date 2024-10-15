@@ -1,16 +1,16 @@
 {
-  "gitSyncId": "66fe5b3e3bcd8736322593bd_efb18a71-4539-4adb-81dc-86aa2b8abef2",
-  "id": "Test runs_FetchTCs",
+  "gitSyncId": "670e5426f395d0500c06975c_ba8208e0-abe4-4c7b-acc0-20dc20c67c05",
+  "id": "Test runs_DeleteTCsforIndividualTR",
   "pluginId": "postgres-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT *\nFROM public.test_cases\nWHERE \n    ('{{FilterTags.selectedOptionLabel}}' = '' OR label_name = '{{FilterTags.selectedOptionLabel}}')\n\t\nORDER BY case_id \tLIMIT {{TestCase.pageSize}} OFFSET {{TestCase.pageOffset}}\n\t\t\n",
+      "body": "DELETE FROM public.test_run_cases\n  WHERE run_id = {{data_tableCopy.selectedRow.run_id}}",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
         {
-          "value": false
+          "value": true
         }
       ],
       "timeoutInMillisecond": 10000
@@ -28,7 +28,7 @@
       }
     ],
     "executeOnLoad": false,
-    "name": "FetchTCs",
+    "name": "DeleteTCsforIndividualTR",
     "pageId": "Test runs",
     "userSetOnLoad": false
   }

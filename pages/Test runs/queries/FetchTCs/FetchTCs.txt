@@ -1,7 +1,0 @@
-SELECT *
-FROM public.test_cases
-WHERE 
-    ('{{FilterTags.selectedOptionLabel}}' = '' OR label_name = '{{FilterTags.selectedOptionLabel}}')
-	
-ORDER BY case_id 	LIMIT {{TestCase.pageSize}} OFFSET {{TestCase.pageOffset}}
-		

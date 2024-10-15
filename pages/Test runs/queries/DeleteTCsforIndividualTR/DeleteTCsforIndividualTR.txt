@@ -1,0 +1,2 @@
+DELETE FROM public.test_run_cases
+  WHERE run_id = {{data_tableCopy.selectedRow.run_id}}

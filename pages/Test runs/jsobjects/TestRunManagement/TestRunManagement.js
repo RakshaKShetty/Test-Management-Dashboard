@@ -60,5 +60,28 @@ export default {
 		 //return (passedcount/totalcount )*100
 		 
 	  
+	},
+	
+		async updateTR () {
+		await DeleteTCsforIndividualTR.run()
+		await UpdateTRs.run()
+			
+	const a = data_tableCopy.selectedRow.run_id
+	
+	const selectedTC = (TestCaseCopy.selectedRows)
+	 for (let i = 0 ; i < selectedTC.length ; i++){
+		 
+		 {
+			InsertTCinTR.run({runID: a , caseID:selectedTC[i].case_id }) 
+		 }
+	 Fetch_TRs.run()
+	//	 FetchTCsforIndividualTR.run()
+	// FetchTCCopy.run()
+		 FetchTCsforIndividualTR.run().then(() => {
+ FetchTCCopy.run();
+});
+ 
+	
+	}
 	}
 }

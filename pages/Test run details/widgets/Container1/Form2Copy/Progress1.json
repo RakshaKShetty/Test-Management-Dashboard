@@ -33,7 +33,7 @@
   "parentColumnSpace": 12.2333984375,
   "parentId": "q0hy33fm98",
   "parentRowSpace": 10,
-  "progress": "{{TestRunManagement.getTRprogess.data || 0}}",
+  "progress": "{{TestRunManagement.getTRprogess.data}}",
   "progressType": "circular",
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",

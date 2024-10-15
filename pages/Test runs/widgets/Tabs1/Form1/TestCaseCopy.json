@@ -2,7 +2,7 @@
   "accentColor": "{{appsmith.theme.colors.primaryColor}}",
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 89,
+  "bottomRow": 109,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
   "childStylesheet": {
     "button": {
@@ -23,11 +23,11 @@
   },
   "columnOrder": [
     "test_case_id",
-    "test_case_name",
     "tc_desc",
     "tlc_label_name",
-    "tc_autostatus",
+    "test_case_name",
     "tc_steps",
+    "tc_autostatus",
     "tc_er"
   ],
   "columnSizeMap": {
@@ -35,15 +35,16 @@
     "step": 62,
     "task": 245
   },
-  "columnUpdatedAt": 1729021396297,
+  "columnUpdatedAt": 1729027636801,
   "columnWidthMap": {
-    "description": 262,
-    "name": 135,
-    "test_case_id": 75,
-    "test_case_name": 165
+    "case_id": 75,
+    "description": 161,
+    "name": 114,
+    "test_case_id": 75
   },
   "defaultPageSize": 0,
   "defaultSelectedRowIndex": "0",
+  "defaultSelectedRowIndices": "{{FetchTCsforIndividualTR.data.map((_, index) => index);}}\n",
   "delimiter": ",",
   "derivedColumns": {
     "customColumn1": {
@@ -88,13 +89,22 @@
       "key": "tableData"
     },
     {
+      "key": "defaultSelectedRowIndices"
+    },
+    {
+      "key": "primaryColumns.tc_desc.computedValue"
+    },
+    {
+      "key": "primaryColumns.tlc_label_name.computedValue"
+    },
+    {
+      "key": "isVisible"
+    },
+    {
       "key": "primaryColumns.test_case_id.computedValue"
     },
     {
       "key": "primaryColumns.test_case_name.computedValue"
-    },
-    {
-      "key": "primaryColumns.tc_desc.computedValue"
     },
     {
       "key": "primaryColumns.tc_steps.computedValue"
@@ -104,12 +114,6 @@
     },
     {
       "key": "primaryColumns.tc_er.computedValue"
-    },
-    {
-      "key": "primaryColumns.tlc_label_name.computedValue"
-    },
-    {
-      "key": "totalRecordsCount"
     }
   ],
   "dynamicPropertyPathList": [
@@ -118,6 +122,9 @@
     },
     {
       "key": "onPageChange"
+    },
+    {
+      "key": "isVisible"
     }
   ],
   "dynamicTriggerPathList": [
@@ -129,6 +136,9 @@
     },
     {
       "key": "onSort"
+    },
+    {
+      "key": "onRowSelected"
     }
   ],
   "enableClientSideSearch": true,
@@ -139,8 +149,8 @@
   "inlineEditingSaveOption": "ROW_LEVEL",
   "isLoading": false,
   "isSortable": true,
-  "isVisible": "true",
-  "isVisibleDownload": false,
+  "isVisible": "{{data_tableCopy.selectedRow.run_id>0}}",
+  "isVisibleDownload": true,
   "isVisibleFilters": true,
   "isVisiblePagination": true,
   "isVisibleSearch": true,
@@ -149,13 +159,14 @@
   "labelTextSize": "0.875rem",
   "leftColumn": 0,
   "multiRowSelection": true,
-  "onPageChange": "{{JSObject1.fetchAllCases()}}",
+  "onPageChange": "{{FetchTC.run()}}",
+  "onRowSelected": "",
   "onSearchTextChanged": "",
   "onSort": "",
-  "originalBottomRow": 60,
-  "originalTopRow": 15,
+  "originalBottomRow": 109,
+  "originalTopRow": 55,
   "parentColumnSpace": 12.021583557128906,
-  "parentId": "pctwlhlpqe",
+  "parentId": "g7eqbhv2n6",
   "parentRowSpace": 10,
   "primaryColumnId": "id",
   "primaryColumns": {
@@ -164,8 +175,8 @@
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
       "cellBackground": "",
-      "columnType": "text",
-      "computedValue": "{{TestCase.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"tc_autostatus\"]))}}",
+      "columnType": "checkbox",
+      "computedValue": "{{TestCaseCopy.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"tc_autostatus\"]))}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,
@@ -181,8 +192,8 @@
       "isDiscardVisible": true,
       "isEditable": false,
       "isSaveVisible": true,
-      "isVisible": true,
-      "label": "Automated Status",
+      "isVisible": false,
+      "label": "tc_autostatus",
       "notation": "standard",
       "originalId": "tc_autostatus",
       "sticky": "",
@@ -197,17 +208,15 @@
       "alias": "tc_desc",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
-      "cellBackground": "",
       "columnType": "text",
-      "computedValue": "{{TestCase.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"tc_desc\"]))}}",
+      "computedValue": "{{TestCaseCopy.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"tc_desc\"]))}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,
       "enableSort": true,
-      "fontStyle": "",
       "horizontalAlignment": "LEFT",
       "id": "tc_desc",
-      "index": 2,
+      "index": 1,
       "isCellEditable": false,
       "isCellVisible": true,
       "isDerived": false,
@@ -220,7 +229,6 @@
       "notation": "standard",
       "originalId": "tc_desc",
       "sticky": "",
-      "textColor": "",
       "textSize": "0.875rem",
       "thousandSeparator": true,
       "validation": {},
@@ -233,7 +241,7 @@
       "allowSameOptionsInNewRow": true,
       "cellBackground": "",
       "columnType": "text",
-      "computedValue": "{{TestCase.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"tc_er\"]))}}",
+      "computedValue": "{{TestCaseCopy.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"tc_er\"]))}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,
@@ -249,8 +257,8 @@
       "isDiscardVisible": true,
       "isEditable": false,
       "isSaveVisible": true,
-      "isVisible": true,
-      "label": "Expected Results",
+      "isVisible": false,
+      "label": "tc_er",
       "notation": "standard",
       "originalId": "tc_er",
       "sticky": "",
@@ -267,7 +275,7 @@
       "allowSameOptionsInNewRow": true,
       "cellBackground": "",
       "columnType": "text",
-      "computedValue": "{{TestCase.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"tc_steps\"]))}}",
+      "computedValue": "{{TestCaseCopy.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"tc_steps\"]))}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,
@@ -283,8 +291,8 @@
       "isDiscardVisible": true,
       "isEditable": false,
       "isSaveVisible": true,
-      "isVisible": true,
-      "label": "Steps",
+      "isVisible": false,
+      "label": "tc_steps",
       "notation": "standard",
       "originalId": "tc_steps",
       "sticky": "",
@@ -301,7 +309,7 @@
       "allowSameOptionsInNewRow": true,
       "cellBackground": "",
       "columnType": "number",
-      "computedValue": "{{TestCase.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"test_case_id\"]))}}",
+      "computedValue": "{{TestCaseCopy.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"test_case_id\"]))}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,
@@ -335,7 +343,7 @@
       "allowSameOptionsInNewRow": true,
       "cellBackground": "",
       "columnType": "text",
-      "computedValue": "{{TestCase.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"test_case_name\"]))}}",
+      "computedValue": "{{TestCaseCopy.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"test_case_name\"]))}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,
@@ -367,17 +375,15 @@
       "alias": "tlc_label_name",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
-      "cellBackground": "",
       "columnType": "text",
-      "computedValue": "{{TestCase.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"tlc_label_name\"]))}}",
+      "computedValue": "{{TestCaseCopy.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"tlc_label_name\"]))}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,
       "enableSort": true,
-      "fontStyle": "",
       "horizontalAlignment": "LEFT",
       "id": "tlc_label_name",
-      "index": 6,
+      "index": 2,
       "isCellEditable": false,
       "isCellVisible": true,
       "isDerived": false,
@@ -390,7 +396,6 @@
       "notation": "standard",
       "originalId": "tlc_label_name",
       "sticky": "",
-      "textColor": "",
       "textSize": "0.875rem",
       "thousandSeparator": true,
       "validation": {},
@@ -403,13 +408,13 @@
   "searchKey": "",
   "serverSidePaginationEnabled": true,
   "showInlineEditingOptionDropdown": true,
-  "tableData": "{{JSObject1.fetchAllCases.data}}",
+  "tableData": "{{FetchTCCopy.data}}",
   "textSize": "0.875rem",
-  "topRow": 44,
-  "totalRecordsCount": "{{TC_Count.data[0].count}}",
+  "topRow": 55,
+  "totalRecordsCount": "100",
   "type": "TABLE_WIDGET_V2",
   "version": 3,
   "verticalAlignment": "CENTER",
-  "widgetId": "9op72cuyrs",
-  "widgetName": "TestCase"
+  "widgetId": "nr6xcdqo57",
+  "widgetName": "TestCaseCopy"
 }

@@ -9,7 +9,8 @@ SELECT
 		tc.steps as tc_steps ,
 		tc.automated_status as tc_autostatus, 
 		tc.label_name as tc_label,
-		trc.run_case_id as trc_id
+		trc.run_case_id as trc_id,
+		tc.case_id as tcid
 		
 FROM
     test_runs tr
@@ -19,4 +20,4 @@ INNER JOIN
 		INNER JOIN test_cases tc
 		ON tc.case_id = trc.case_id
 WHERE
-    tr.run_id = {{data_tableCopy.triggeredRow.run_id}};
+    tr.run_id = {{data_tableCopy.selectedRow.run_id}}
