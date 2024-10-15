@@ -1,16 +1,16 @@
 {
-  "gitSyncId": "66fe5b3e3bcd8736322593bd_8a78001b-77db-483f-a5ed-fce071e092ce",
-  "id": "Test cases_InsertTCs",
+  "gitSyncId": "6705065fd4c7d74e2813972c_7f671d11-7d26-45d0-a312-bf947249cdbf",
+  "id": "Test cases_InsertLabelswithTC",
   "pluginId": "postgres-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "INSERT INTO public.\"test_cases\" (\"name\", \"description\", \"steps\", \"expected_results\",\"automated_status\")\n  VALUES ( '{{TCName.text}}', '{{TCDesc.text}}', '{{TC_Steps.text}}', '{{TC_ExpectedResults.text}}','{{TCAutomated.selectedOptionLabel.toString()}}' )\n\t\n\tRETURNING case_id",
+      "body": "INSERT INTO public.test_case_labels (\"test_case_id\", \"label_name\" )\n  VALUES ({{this.params.caseID }}, '{{this.params.labelname}}');",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
         {
-          "value": false
+          "value": true
         }
       ],
       "timeoutInMillisecond": 10000
@@ -28,7 +28,7 @@
       }
     ],
     "executeOnLoad": false,
-    "name": "InsertTCs",
+    "name": "InsertLabelswithTC",
     "pageId": "Test cases",
     "userSetOnLoad": false
   }

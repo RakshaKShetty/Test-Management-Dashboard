@@ -2,13 +2,13 @@ export default {
 	myVar1: [],
 	myVar2: {},
 
-	async	queryTransform(a = []) {
+	async	queryTransform(a = Select_Tag.selectedOptionLabels) {
 		
 		if (a.length == 0 )
 			
 		{		return "'0'"
 		
-		FetchTCs.run()
+		FetchTC.run()
 		}
 		
 		else 

@@ -2,7 +2,7 @@
   "accentColor": "{{appsmith.theme.colors.primaryColor}}",
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 73,
+  "bottomRow": 13,
   "boxShadow": "none",
   "defaultOptionValue": "",
   "dynamicBindingPathList": [
@@ -20,15 +20,22 @@
   "dynamicPropertyPathList": [
     {
       "key": "sourceData"
+    },
+    {
+      "key": "onOptionChange"
     }
   ],
-  "dynamicTriggerPathList": [],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onOptionChange"
+    }
+  ],
   "isDisabled": false,
   "isFilterable": true,
   "isLoading": false,
   "isRequired": false,
   "isVisible": true,
-  "key": "csi8gwxiil",
+  "key": "7gyw0bvubw",
   "labelAlignment": "left",
   "labelPosition": "Top",
   "labelText": "Label",
@@ -38,25 +45,26 @@
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 450,
-  "mobileBottomRow": 73,
+  "mobileBottomRow": 13,
   "mobileLeftColumn": 0,
-  "mobileRightColumn": 19,
-  "mobileTopRow": 66,
+  "mobileRightColumn": 14,
+  "mobileTopRow": 6,
   "needsErrorInfo": false,
+  "onOptionChange": "{{JSObject1.queryTransform().then(() => {\n  FetchTC.run();\n});}}",
   "optionLabel": "label",
   "optionValue": "label",
-  "parentColumnSpace": 11.893749999999999,
-  "parentId": "rkjlzqotww",
+  "parentColumnSpace": 7.45703125,
+  "parentId": "tngnza05pu",
   "parentRowSpace": 10,
   "placeholderText": "Select option(s)",
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 23,
+  "rightColumn": 64,
   "serverSideFiltering": false,
   "sourceData": "{{FetchLabels.data.map( (obj) =>{ return  {'label': obj.name, 'value': obj.description } })}}",
-  "topRow": 66,
+  "topRow": 6,
   "type": "MULTI_SELECT_WIDGET_V2",
   "version": 1,
-  "widgetId": "2kfqju0mtx",
-  "widgetName": "MultiSelect1"
+  "widgetId": "au2nq79q5l",
+  "widgetName": "Select_Tag"
 }
