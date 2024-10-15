@@ -352,7 +352,7 @@
   "rightColumn": 64,
   "searchKey": "",
   "serverSidePaginationEnabled": true,
-  "tableData": "{{FetchTC.data}}",
+  "tableData": "{{JSObject1.fetchAllCases.data}}",
   "textSize": "0.875rem",
   "topRow": 13,
   "totalRecordsCount": "{{TC_Count.data[0].count}}",

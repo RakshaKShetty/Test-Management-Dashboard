@@ -22,7 +22,7 @@
         "key": "body"
       }
     ],
-    "executeOnLoad": false,
+    "executeOnLoad": true,
     "fullyQualifiedName": "JSObject1.fetchAllCases",
     "name": "fetchAllCases",
     "pageId": "Test runs",

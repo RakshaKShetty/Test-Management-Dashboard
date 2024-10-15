@@ -5,7 +5,7 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "UPDATE public.\"test_runs\" SET\n    \"run_name\" = '{{TRNameCopy.text}}',\n    \"pr_number\" = '{{PRNumberCopy.text}}',\n  \n \t\t\"description\" = '{{TRDescCopy.text}}',\n    \"browser\" = '{{TR_browserCopy.text}}',\n    \"os\" = '{{TR_OSCopy.selectedOptionLabel}}',\n    \"environment\" = '{{TR_EnvironmentCopy.selectedOptionLabel}}'\n  WHERE 1 = 0; -- Specify a valid condition here. Removing the condition may update every row in the table!",
+      "body": "UPDATE public.\"test_runs\" SET\n    \"run_name\" = '{{TRNameCopy.text}}',\n    \"pr_number\" = '{{PRNumberCopy.text}}',\n  \n \t\t\"description\" = '{{TRDescCopy.text}}',\n    \"browser\" = '{{TR_browserCopy.text}}',\n    \"os\" = '{{TR_OSCopy.selectedOptionLabel}}',\n    \"environment\" = '{{TR_EnvironmentCopy.selectedOptionLabel}}'\n  WHERE run_id = {{data_tableCopy.selectedRow.run_id}}",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [

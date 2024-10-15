@@ -25,7 +25,7 @@ export default {
 	async fetchAllCases()
 	{
 		await this.queryTransform()
-		const allCases = await FetchTC.run({limit: data_table.pageSize , offset : data_table.pageOffset} )
+		const allCases = await FetchTC.run({limit: TestCase.pageSize , offset : TestCase.pageOffset} )
 
 		return allCases
 	}
