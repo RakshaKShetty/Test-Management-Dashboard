@@ -179,7 +179,7 @@
   "leftColumn": 0,
   "multiRowSelection": false,
   "onPageChange": "{{Fetch_TRs.run();\nTR_Count.run()}}",
-  "onRowSelected": "{{FetchTCCopy.run().then(() => {\n  FetchTCsforIndividualTR.run();\n});}}",
+  "onRowSelected": "{{FetchTC.run().then(() => {\n  FetchTCsforIndividualTR.run();\n});}}",
   "onSearchTextChanged": "",
   "onSort": "",
   "parentColumnSpace": 2.666015625,

@@ -78,7 +78,7 @@ export default {
 	//	 FetchTCsforIndividualTR.run()
 	// FetchTCCopy.run()
 		 FetchTCsforIndividualTR.run().then(() => {
- FetchTCCopy.run();
+ FetchTC.run();
 });
  
 	

@@ -25,14 +25,14 @@ export default {
 	async fetchAllCases()
 	{
 		await this.queryTransform()
-		const allCases = await FetchTCCopy.run({ limit: TestCase.pageSize , offset : TestCase.pageOffset} )
+		const allCases = await FetchTC.run({ limit: TestCase.pageSize , offset : TestCase.pageOffset} )
 
 		return allCases
 	},
 	async fetchAllTRCases()
 	{
 		await this.queryTransform()
-		const allCases = await FetchTCCopy.run({ limit: TestCaseCopy.pageSize , offset : TestCaseCopy.pageOffset} )
+		const allCases = await FetchTC.run({ limit: TestCaseCopy.pageSize , offset : TestCaseCopy.pageOffset} )
 
 		return allCases
 	},

@@ -411,7 +411,7 @@
   "searchKey": "",
   "serverSidePaginationEnabled": true,
   "showInlineEditingOptionDropdown": true,
-  "tableData": "{{FetchTCCopy.data}}",
+  "tableData": "{{FetchTC.data}}",
   "textSize": "0.875rem",
   "topRow": 55,
   "totalRecordsCount": "{{TC_Count.data[0].count}}",

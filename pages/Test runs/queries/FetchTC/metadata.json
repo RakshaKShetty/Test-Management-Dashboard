@@ -1,6 +1,6 @@
 {
   "gitSyncId": "670e5426f395d0500c06975c_c5d8e0a4-7638-47f5-8c41-835541d39e9a",
-  "id": "Test runs_FetchTCCopy",
+  "id": "Test runs_FetchTC",
   "pluginId": "postgres-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
@@ -28,7 +28,7 @@
       }
     ],
     "executeOnLoad": true,
-    "name": "FetchTCCopy",
+    "name": "FetchTC",
     "pageId": "Test runs",
     "userSetOnLoad": false
   }

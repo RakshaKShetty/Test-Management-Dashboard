@@ -38,7 +38,7 @@
   "mobileRightColumn": 39,
   "mobileTopRow": 3,
   "needsErrorInfo": false,
-  "onClick": "{{showModal(Modal2.name).then(() => {\n  FetchTCCopy.run();\n  TC_Count.run();\n});}}",
+  "onClick": "{{showModal(Modal2.name).then(() => {\n  FetchTC.run();\n  TC_Count.run();\n});}}",
   "parentColumnSpace": 2.666015625,
   "parentId": "uzflbi47cs",
   "parentRowSpace": 10,

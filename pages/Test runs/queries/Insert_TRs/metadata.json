@@ -5,7 +5,7 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "INSERT INTO public.\"test_runs\" (\"run_name\", \"pr_number\", \"created_by\", \"description\", \"browser\", \"os\", \"environment\",\"created_at\")\n  VALUES ('{{TRName.text}}', '{{PRNumber.text}}', 1 , '{{TRDesc.text}}', '{{TR_browser.text}}', '{{TR_OS.selectedOptionLabel}}', '{{TR_Environment.selectedOptionLabel.toString()}}', '{{moment()}}')\n\nRETURNING run_id",
+      "body": "INSERT INTO public.\"test_runs\" (\"run_name\", \"pr_number\", \"created_by\", \"description\", \"browser\", \"os\", \"environment\",\"created_at\")\n  VALUES ($${{TRName.text}}$$, $${{PRNumber.text}}$$, 1 , $${{TRDesc.text}}$$, '{{TR_browser.text}}', '{{TR_OS.selectedOptionLabel}}', '{{TR_Environment.selectedOptionLabel.toString()}}', '{{moment()}}')\n\nRETURNING run_id",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
