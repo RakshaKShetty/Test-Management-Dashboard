@@ -88,11 +88,17 @@
   "dynamicPropertyPathList": [
     {
       "key": "tableData"
+    },
+    {
+      "key": "onRowSelected"
     }
   ],
   "dynamicTriggerPathList": [
     {
       "key": "onPageChange"
+    },
+    {
+      "key": "onRowSelected"
     }
   ],
   "enableClientSideSearch": true,
@@ -116,6 +122,7 @@
   "mobileTopRow": 13,
   "needsErrorInfo": false,
   "onPageChange": "{{FetchTC.run()}}",
+  "onRowSelected": "",
   "parentColumnSpace": 7.45703125,
   "parentId": "tngnza05pu",
   "parentRowSpace": 10,

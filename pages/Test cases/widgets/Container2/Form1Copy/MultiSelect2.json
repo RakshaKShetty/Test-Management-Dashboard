@@ -2,9 +2,9 @@
   "accentColor": "{{appsmith.theme.colors.primaryColor}}",
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 74,
+  "bottomRow": 75,
   "boxShadow": "none",
-  "defaultOptionValue": "'GIT'",
+  "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( data_table.selectedRow.tlc_label_name))(MultiSelect2.options, MultiSelect2.serverSideFiltering) }}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -14,6 +14,9 @@
     },
     {
       "key": "sourceData"
+    },
+    {
+      "key": "defaultOptionValue"
     }
   ],
   "dynamicHeight": "FIXED",
@@ -26,39 +29,37 @@
   "isDisabled": false,
   "isFilterable": true,
   "isLoading": false,
-  "isRequired": true,
+  "isRequired": false,
   "isVisible": true,
-  "key": "srvgk1j40q",
+  "key": "odirz70sj5",
   "labelAlignment": "left",
   "labelPosition": "Top",
-  "labelText": "Label(s) *",
+  "labelText": "Label",
   "labelTextSize": "0.875rem",
   "labelWidth": 5,
   "leftColumn": 0,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 450,
-  "mobileBottomRow": 30,
+  "mobileBottomRow": 75,
   "mobileLeftColumn": 0,
   "mobileRightColumn": 20,
-  "mobileTopRow": 23,
+  "mobileTopRow": 68,
   "needsErrorInfo": false,
   "optionLabel": "label",
   "optionValue": "label",
-  "originalBottomRow": 74,
-  "originalTopRow": 67,
-  "parentColumnSpace": 3.2421875,
+  "parentColumnSpace": 4.66796875,
   "parentId": "32irul4bjr",
   "parentRowSpace": 10,
-  "placeholderText": "Select option",
+  "placeholderText": "Select option(s)",
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 64,
+  "rightColumn": 63,
   "serverSideFiltering": false,
   "sourceData": "{{FetchLabels.data.map( (obj) =>{ return  {'label': obj.name, 'value': obj.description } })}}",
-  "topRow": 67,
-  "type": "SELECT_WIDGET",
+  "topRow": 68,
+  "type": "MULTI_SELECT_WIDGET_V2",
   "version": 1,
-  "widgetId": "ly0cnvrho1",
-  "widgetName": "TCTagsCopy"
+  "widgetId": "rg5dmx6jfz",
+  "widgetName": "MultiSelect2"
 }

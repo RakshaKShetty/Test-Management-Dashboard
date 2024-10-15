@@ -35,5 +35,12 @@ async insertTC () {
 	const allCases = await FetchTC.run({limit: data_table.pageSize, offset : data_table.pageOffset})
 	return allCases
 		
+	},
+	
+	onTableSelected ()
+	
+	{
+		
 	}
+	
 }
