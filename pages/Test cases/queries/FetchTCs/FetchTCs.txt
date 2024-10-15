@@ -1,5 +1,5 @@
 SELECT *
 FROM public.test_cases
-WHERE 
-    ('{{SelectTag.selectedOptionLabel}}' = '' OR label_name = '{{SelectTag.selectedOptionLabel}}')
-ORDER BY case_id DESC LIMIT {{data_tablea.pageSize}} OFFSET {{data_tablea.pageOffset}}
+ 
+
+ORDER BY case_id DESC

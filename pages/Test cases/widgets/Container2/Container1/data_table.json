@@ -35,14 +35,19 @@
     "test_case_name",
     "tc_desc",
     "tc_steps",
-    "tc_autostatus",
     "tc_er",
+    "tc_autostatus",
     "tlc_label_name"
   ],
-  "columnUpdatedAt": 1728994604134,
-  "columnWidthMap": {},
+  "columnUpdatedAt": 1728999494905,
+  "columnWidthMap": {
+    "tc_er": 169,
+    "tc_steps": 114,
+    "test_case_id": 85.00000000000001,
+    "tlc_label_name": 273
+  },
   "defaultPageSize": 0,
-  "defaultSelectedRowIndex": 0,
+  "defaultSelectedRowIndex": "0",
   "defaultSelectedRowIndices": [
     0
   ],
@@ -88,9 +93,6 @@
   "dynamicPropertyPathList": [
     {
       "key": "tableData"
-    },
-    {
-      "key": "onRowSelected"
     }
   ],
   "dynamicTriggerPathList": [
@@ -350,7 +352,7 @@
   "rightColumn": 64,
   "searchKey": "",
   "serverSidePaginationEnabled": true,
-  "tableData": "{{TCLogic.FetchAllCases.data}}",
+  "tableData": "{{FetchTC.data}}",
   "textSize": "0.875rem",
   "topRow": 13,
   "totalRecordsCount": "{{TC_Count.data[0].count}}",

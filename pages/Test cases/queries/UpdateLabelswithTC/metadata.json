@@ -1,16 +1,16 @@
 {
-  "gitSyncId": "66fe5b3e3bcd8736322593bd_44266b5c-79eb-4dd8-9342-76753b0511f6",
-  "id": "Test cases_FetchTCs",
+  "gitSyncId": "670e5426f395d0500c06975c_8b9d0868-0a1b-42c3-af1e-f89ff5e8ee7e",
+  "id": "Test cases_UpdateLabelswithTC",
   "pluginId": "postgres-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT *\nFROM public.test_cases\n \n\nORDER BY case_id DESC",
+      "body": "UPDATE public.test_case_labels\nSET label_name = '{{this.params.labelname}}'\nWHERE test_case_id = {{this.params.caseID}};",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
         {
-          "value": false
+          "value": true
         }
       ],
       "timeoutInMillisecond": 10000
@@ -22,9 +22,13 @@
       "name": "TestCaseRepo",
       "pluginId": "postgres-plugin"
     },
-    "dynamicBindingPathList": [],
+    "dynamicBindingPathList": [
+      {
+        "key": "body"
+      }
+    ],
     "executeOnLoad": false,
-    "name": "FetchTCs",
+    "name": "UpdateLabelswithTC",
     "pageId": "Test cases",
     "userSetOnLoad": false
   }

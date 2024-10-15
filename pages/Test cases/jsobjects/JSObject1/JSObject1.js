@@ -3,14 +3,14 @@ export default {
 	myVar2: {},
 
 	async	queryTransform(a = Select_Tag.selectedOptionLabels) {
-		
+
 		if (a.length == 0 )
-			
+
 		{		return "'0'"
-		
-		FetchTC.run()
+
+		 FetchTC.run()
 		}
-		
+
 		else 
 		{
 
@@ -21,5 +21,12 @@ export default {
 
 
 		}
+	},
+	async fetchAllCases()
+	{
+		await this.queryTransform()
+		const allCases = await FetchTC.run({limit: data_table.pageSize , offset : data_table.pageOffset} )
+
+		return allCases
 	}
 }

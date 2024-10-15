@@ -1,11 +1,11 @@
 {
-  "gitSyncId": "66fe5b3e3bcd8736322593bd_44266b5c-79eb-4dd8-9342-76753b0511f6",
-  "id": "Test cases_FetchTCs",
+  "gitSyncId": "670e5426f395d0500c06975c_75874efd-1a7e-4a64-bcf5-73a578fcbb67",
+  "id": "Test cases_DeleteLabelswithTC",
   "pluginId": "postgres-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT *\nFROM public.test_cases\n \n\nORDER BY case_id DESC",
+      "body": "DELETE FROM public.test_case_labels\n  WHERE test_case_id = {{data_table.selectedRow.test_case_id}}",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
@@ -22,9 +22,13 @@
       "name": "TestCaseRepo",
       "pluginId": "postgres-plugin"
     },
-    "dynamicBindingPathList": [],
+    "dynamicBindingPathList": [
+      {
+        "key": "body"
+      }
+    ],
     "executeOnLoad": false,
-    "name": "FetchTCs",
+    "name": "DeleteLabelswithTC",
     "pageId": "Test cases",
     "userSetOnLoad": false
   }

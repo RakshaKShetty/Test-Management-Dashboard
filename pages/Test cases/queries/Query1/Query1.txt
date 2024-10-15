@@ -1,0 +1,3 @@
+UPDATE public.test_case_labels
+SET label_name = array_remove(label_name, {{data_table.selectedRow.tlc_label_name[0]}})
+WHERE test_case_id = {{data_table.selectedRow.test_case_id}};

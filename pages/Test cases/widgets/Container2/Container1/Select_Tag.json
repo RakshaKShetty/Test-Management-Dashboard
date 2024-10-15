@@ -50,7 +50,7 @@
   "mobileRightColumn": 21,
   "mobileTopRow": 5,
   "needsErrorInfo": false,
-  "onOptionChange": "{{JSObject1.queryTransform().then(() => {\n  TCLogic.FetchAllCases()\n});}}",
+  "onOptionChange": "{{JSObject1.queryTransform().then(() => {\n  JSObject1.fetchAllCases()\n});}}",
   "optionLabel": "label",
   "optionValue": "label",
   "parentColumnSpace": 7.45703125,

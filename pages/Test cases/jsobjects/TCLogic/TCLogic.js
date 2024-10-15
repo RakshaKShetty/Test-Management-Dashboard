@@ -16,31 +16,22 @@ async insertTC () {
 	
 	}
 	},
-	 myFun2 () {
-		//	use async-await or promises
-		//	await storeValue('varName', 'hello world')
-		const labels = (TCMultiTags.selectedOptionLabels)
-		
-		for (let i = 0 ; i < labels.length ; i++)
-			{
-			const a = labels[i].toString()
-			 return a
-			}
-		
-	},
-	
-	async FetchAllCases()
-	{ 
-	await JSObject1.queryTransform()
-	const allCases = await FetchTC.run({limit: data_table.pageSize, offset : data_table.pageOffset})
-	return allCases
-		
-	},
-	
-	onTableSelected ()
-	
+	async updateTC()
 	{
+	await DeleteLabelswithTC.run()
+	await UpdateTCs.run()
 		
+	const a = data_table.selectedRow.test_case_id
+	const labels = (TCTagsCopy.selectedOptionLabels)
+	 for (let i = 0 ; i < labels.length ; i++){
+		 
+		{
+		InsertLabelswithTC.run({caseID: a , labelname: labels[i].toString()}) 
+		 } 
+		JSObject1.fetchAllCases()
+	
+	
+	}
 	}
 	
 }

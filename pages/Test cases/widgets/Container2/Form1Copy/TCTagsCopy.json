@@ -4,7 +4,7 @@
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 75,
   "boxShadow": "none",
-  "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( data_table.selectedRow.tlc_label_name))(MultiSelect2.options, MultiSelect2.serverSideFiltering) }}",
+  "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( data_table.selectedRow.tlc_label_name))(TCTagsCopy.options, TCTagsCopy.serverSideFiltering) }}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -29,12 +29,12 @@
   "isDisabled": false,
   "isFilterable": true,
   "isLoading": false,
-  "isRequired": false,
+  "isRequired": true,
   "isVisible": true,
   "key": "odirz70sj5",
   "labelAlignment": "left",
   "labelPosition": "Top",
-  "labelText": "Label",
+  "labelText": "Label(s) *",
   "labelTextSize": "0.875rem",
   "labelWidth": 5,
   "leftColumn": 0,
@@ -48,6 +48,8 @@
   "needsErrorInfo": false,
   "optionLabel": "label",
   "optionValue": "label",
+  "originalBottomRow": 75,
+  "originalTopRow": 68,
   "parentColumnSpace": 4.66796875,
   "parentId": "32irul4bjr",
   "parentRowSpace": 10,
@@ -61,5 +63,5 @@
   "type": "MULTI_SELECT_WIDGET_V2",
   "version": 1,
   "widgetId": "rg5dmx6jfz",
-  "widgetName": "MultiSelect2"
+  "widgetName": "TCTagsCopy"
 }
