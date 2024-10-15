@@ -20,6 +20,9 @@
   "dynamicPropertyPathList": [
     {
       "key": "sourceData"
+    },
+    {
+      "key": "onOptionChange"
     }
   ],
   "dynamicTriggerPathList": [
@@ -32,7 +35,7 @@
   "isLoading": false,
   "isRequired": false,
   "isVisible": true,
-  "key": "m1du2aohgc",
+  "key": "pj1kcxv6cf",
   "labelAlignment": "left",
   "labelPosition": "Top",
   "labelText": "Filter by Tags",
@@ -42,28 +45,26 @@
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 450,
-  "mobileBottomRow": 13,
+  "mobileBottomRow": 43,
   "mobileLeftColumn": 0,
   "mobileRightColumn": 20,
-  "mobileTopRow": 6,
+  "mobileTopRow": 36,
   "needsErrorInfo": false,
-  "onOptionChange": "{{FetchTCs.run()}}",
+  "onOptionChange": "{{FetchTC.run()}}",
   "optionLabel": "label",
   "optionValue": "label",
-  "originalBottomRow": 42,
-  "originalTopRow": 35,
-  "parentColumnSpace": 11.7,
+  "parentColumnSpace": 11.893749999999999,
   "parentId": "pctwlhlpqe",
   "parentRowSpace": 10,
-  "placeholderText": "Select option",
+  "placeholderText": "Select option(s)",
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 29,
+  "rightColumn": 25,
   "serverSideFiltering": false,
   "sourceData": "{{FetchLabels.data.map( (obj) =>{ return  {'label': obj.name, 'value': obj.description } })}}",
   "topRow": 36,
-  "type": "SELECT_WIDGET",
+  "type": "MULTI_SELECT_WIDGET_V2",
   "version": 1,
-  "widgetId": "bc3iwf7ghd",
+  "widgetId": "fy07a921kj",
   "widgetName": "FilterTags"
 }

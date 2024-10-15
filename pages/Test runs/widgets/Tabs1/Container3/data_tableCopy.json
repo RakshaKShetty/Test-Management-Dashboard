@@ -24,13 +24,13 @@
   "columnOrder": [
     "run_id",
     "run_name",
-    "pr_number",
-    "created_by",
-    "created_at",
     "description",
     "browser",
     "os",
     "environment",
+    "created_by",
+    "created_at",
+    "pr_number",
     "customColumn1"
   ],
   "columnSizeMap": {
@@ -38,7 +38,7 @@
     "step": 62,
     "task": 245
   },
-  "columnUpdatedAt": 1728294164753,
+  "columnUpdatedAt": 1729021582272,
   "columnWidthMap": {
     "Owner": 94,
     "Priority": 120,
@@ -442,7 +442,7 @@
       "isDiscardVisible": true,
       "isEditable": false,
       "isSaveVisible": true,
-      "isVisible": false,
+      "isVisible": true,
       "label": "PR Number",
       "notation": "standard",
       "originalId": "pr_number",
@@ -510,7 +510,7 @@
       "isDiscardVisible": true,
       "isEditable": false,
       "isSaveVisible": true,
-      "isVisible": false,
+      "isVisible": true,
       "label": "Test Run Name",
       "notation": "standard",
       "originalId": "run_name",

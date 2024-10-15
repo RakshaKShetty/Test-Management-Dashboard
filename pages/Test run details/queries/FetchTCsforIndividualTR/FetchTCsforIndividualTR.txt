@@ -19,5 +19,4 @@ INNER JOIN
 		INNER JOIN test_cases tc
 		ON tc.case_id = trc.case_id
 WHERE
-    tr.run_id = {{appsmith.URL.queryParams.trid
-}};
+    tr.run_id = {{appsmith.URL.queryParams.trid}};

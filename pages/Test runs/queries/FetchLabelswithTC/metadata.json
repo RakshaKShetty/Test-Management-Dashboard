@@ -1,16 +1,16 @@
 {
-  "gitSyncId": "66fe5b3e3bcd8736322593bd_efb18a71-4539-4adb-81dc-86aa2b8abef2",
-  "id": "Test runs_FetchTCs",
+  "gitSyncId": "670e5426f395d0500c06975c_3c4b6cf2-3d2e-47e4-aaf7-edb61e30e4c9",
+  "id": "Test runs_FetchLabelswithTC",
   "pluginId": "postgres-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT *\nFROM public.test_cases\nWHERE \n    ('{{FilterTags.selectedOptionLabel}}' = '' OR label_name = '{{FilterTags.selectedOptionLabel}}')\n\t\nORDER BY case_id \tLIMIT {{TestCase.pageSize}} OFFSET {{TestCase.pageOffset}}\n\t\t\n",
+      "body": "SELECT * FROM public.\"test_case_labels\" ORDER By test_case_id;",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
         {
-          "value": false
+          "value": true
         }
       ],
       "timeoutInMillisecond": 10000
@@ -22,13 +22,9 @@
       "name": "TestCaseRepo",
       "pluginId": "postgres-plugin"
     },
-    "dynamicBindingPathList": [
-      {
-        "key": "body"
-      }
-    ],
+    "dynamicBindingPathList": [],
     "executeOnLoad": false,
-    "name": "FetchTCs",
+    "name": "FetchLabelswithTC",
     "pageId": "Test runs",
     "userSetOnLoad": false
   }

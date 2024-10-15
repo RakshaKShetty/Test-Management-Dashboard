@@ -1,0 +1,1 @@
+SELECT * FROM public."test_case_labels" ORDER By test_case_id;

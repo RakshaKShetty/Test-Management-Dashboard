@@ -1,0 +1,24 @@
+SELECT
+    
+    tc.case_id AS test_case_id,
+		tc.name as test_case_name ,
+    tc.description as tc_desc,
+		tc.steps as tc_steps ,
+		tc.automated_status as tc_autostatus, 
+		tc.expected_results as tc_er,
+		ARRAY_AGG(tlc.label_name) as tlc_label_name
+		
+FROM
+    test_cases tc
+INNER JOIN
+    test_case_labels tlc
+		ON tc.case_id = tlc.test_case_id
+		 
+  WHERE 
+    ARRAY[{{JSObject1.queryTransform.data}}] = ARRAY['0'] 
+		
+    OR tlc.label_name = ANY(ARRAY[{{JSObject1.queryTransform.data}}])
+		
+	GROUP By tc.case_id
+	ORDER BY tc.case_id DESC 
+	LIMIT {{this.params.limit}} OFFSET {{this.params.offset}}
