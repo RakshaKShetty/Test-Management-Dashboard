@@ -2,8 +2,9 @@
   "accentColor": "{{appsmith.theme.colors.primaryColor}}",
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 109,
+  "bottomRow": 121,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+  "cellBackground": "",
   "childStylesheet": {
     "button": {
       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
@@ -35,7 +36,7 @@
     "step": 62,
     "task": 245
   },
-  "columnUpdatedAt": 1729027636801,
+  "columnUpdatedAt": 1729030310712,
   "columnWidthMap": {
     "case_id": 75,
     "description": 161,
@@ -86,9 +87,6 @@
       "key": "boxShadow"
     },
     {
-      "key": "tableData"
-    },
-    {
       "key": "defaultSelectedRowIndices"
     },
     {
@@ -117,6 +115,9 @@
     },
     {
       "key": "totalRecordsCount"
+    },
+    {
+      "key": "tableData"
     }
   ],
   "dynamicPropertyPathList": [
@@ -128,6 +129,9 @@
     },
     {
       "key": "isVisible"
+    },
+    {
+      "key": "cellBackground"
     }
   ],
   "dynamicTriggerPathList": [
@@ -166,8 +170,8 @@
   "onRowSelected": "",
   "onSearchTextChanged": "",
   "onSort": "",
-  "originalBottomRow": 109,
-  "originalTopRow": 55,
+  "originalBottomRow": 122,
+  "originalTopRow": 68,
   "parentColumnSpace": 12.021583557128906,
   "parentId": "g7eqbhv2n6",
   "parentRowSpace": 10,
@@ -211,6 +215,7 @@
       "alias": "tc_desc",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
+      "cellBackground": "",
       "columnType": "text",
       "computedValue": "{{TestCaseCopy.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"tc_desc\"]))}}",
       "currencyCode": "USD",
@@ -378,6 +383,7 @@
       "alias": "tlc_label_name",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
+      "cellBackground": "",
       "columnType": "text",
       "computedValue": "{{TestCaseCopy.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"tlc_label_name\"]))}}",
       "currencyCode": "USD",
@@ -411,9 +417,9 @@
   "searchKey": "",
   "serverSidePaginationEnabled": true,
   "showInlineEditingOptionDropdown": true,
-  "tableData": "{{FetchTC.data}}",
+  "tableData": "{{JSObject1.fetchAllTRCases.data}}",
   "textSize": "0.875rem",
-  "topRow": 55,
+  "topRow": 67,
   "totalRecordsCount": "{{TC_Count.data[0].count}}",
   "type": "TABLE_WIDGET_V2",
   "version": 3,

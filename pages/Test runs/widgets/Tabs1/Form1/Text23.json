@@ -1,0 +1,61 @@
+{
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 67,
+  "dynamicBindingPathList": [
+    {
+      "key": "truncateButtonColor"
+    },
+    {
+      "key": "fontFamily"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "isVisible"
+    }
+  ],
+  "dynamicHeight": "AUTO_HEIGHT",
+  "dynamicPropertyPathList": [
+    {
+      "key": "isVisible"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
+  "fontSize": "0.875rem",
+  "fontStyle": "ITALIC",
+  "isLoading": false,
+  "isVisible": "{{data_tableCopy.selectedRow.run_id>0}}",
+  "key": "uifbdque78",
+  "leftColumn": 0,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "mobileBottomRow": 59,
+  "mobileLeftColumn": 1,
+  "mobileRightColumn": 17,
+  "mobileTopRow": 55,
+  "needsErrorInfo": false,
+  "originalBottomRow": 68,
+  "originalTopRow": 57,
+  "overflow": "NONE",
+  "parentColumnSpace": 4.3922119140625,
+  "parentId": "g7eqbhv2n6",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 63,
+  "shouldScrollContents": true,
+  "shouldTruncate": false,
+  "text": "Test cases (TCs) mapped to this Test Run will be displayed first in the table below!\n\n<b>Update the selection for modifying Test Run",
+  "textAlign": "LEFT",
+  "textColor": "#808080",
+  "topRow": 57,
+  "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
+  "type": "TEXT_WIDGET",
+  "version": 1,
+  "widgetId": "wf5848bxjo",
+  "widgetName": "Text23"
+}

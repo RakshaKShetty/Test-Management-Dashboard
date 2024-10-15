@@ -27,7 +27,7 @@
         "key": "body"
       }
     ],
-    "executeOnLoad": true,
+    "executeOnLoad": false,
     "fullyQualifiedName": "JSObject1.queryTransform",
     "name": "queryTransform",
     "pageId": "Test runs",
