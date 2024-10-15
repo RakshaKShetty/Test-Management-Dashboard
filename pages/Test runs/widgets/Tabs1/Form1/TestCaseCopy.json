@@ -114,6 +114,9 @@
     },
     {
       "key": "primaryColumns.tc_er.computedValue"
+    },
+    {
+      "key": "totalRecordsCount"
     }
   ],
   "dynamicPropertyPathList": [
@@ -150,7 +153,7 @@
   "isLoading": false,
   "isSortable": true,
   "isVisible": "{{data_tableCopy.selectedRow.run_id>0}}",
-  "isVisibleDownload": true,
+  "isVisibleDownload": false,
   "isVisibleFilters": true,
   "isVisiblePagination": true,
   "isVisibleSearch": true,
@@ -159,7 +162,7 @@
   "labelTextSize": "0.875rem",
   "leftColumn": 0,
   "multiRowSelection": true,
-  "onPageChange": "{{FetchTC.run()}}",
+  "onPageChange": "{{JSObject1.fetchAllTRCases()}}",
   "onRowSelected": "",
   "onSearchTextChanged": "",
   "onSort": "",
@@ -411,7 +414,7 @@
   "tableData": "{{FetchTCCopy.data}}",
   "textSize": "0.875rem",
   "topRow": 55,
-  "totalRecordsCount": "100",
+  "totalRecordsCount": "{{TC_Count.data[0].count}}",
   "type": "TABLE_WIDGET_V2",
   "version": 3,
   "verticalAlignment": "CENTER",
