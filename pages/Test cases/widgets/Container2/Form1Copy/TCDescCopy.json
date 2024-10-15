@@ -5,7 +5,7 @@
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 22,
   "boxShadow": "none",
-  "defaultText": "{{data_table.selectedRow.description}}",
+  "defaultText": "{{data_table.selectedRow.tc_desc}}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"

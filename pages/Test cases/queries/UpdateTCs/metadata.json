@@ -5,7 +5,7 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "UPDATE public.\"test_cases\" SET\n    \"name\" = $${{TCNameCopy.text}}$$,\n    \"description\" = $${{TCDescCopy.text}}$$,\n    \"steps\" = $${{TC_StepsCopy.text}}$$ ,\n    \"expected_results\" = $${{TC_ExpectedResultsCopy.text}}$$,\n\t\t\"automated_status\" ='{{TCAutomatedCopy.selectedOptionLabel.toString()}}',\n    \"label_name\" = '{{TCTagsCopy.selectedOptionLabel.toString()}}'\n  WHERE case_id = {{data_table.selectedRow.case_id}}; ",
+      "body": "UPDATE public.\"test_cases\" SET\n    \"name\" = $${{TCNameCopy.text}}$$,\n    \"description\" = $${{TCDescCopy.text}}$$,\n    \"steps\" = $${{TC_StepsCopy.text}}$$ ,\n    \"expected_results\" = $${{TC_ExpectedResultsCopy.text}}$$,\n\t\t\"automated_status\" ='{{TCAutomatedCopy.selectedOptionLabel.toString()}}',\n    \"label_name\" = '{{TCTagsCopy.selectedOptionLabel.toString()}}'\n  WHERE case_id = {{data_tablea.selectedRow.case_id}}; ",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [

@@ -5,4 +5,4 @@ UPDATE public."test_cases" SET
     "expected_results" = $${{TC_ExpectedResultsCopy.text}}$$,
 		"automated_status" ='{{TCAutomatedCopy.selectedOptionLabel.toString()}}',
     "label_name" = '{{TCTagsCopy.selectedOptionLabel.toString()}}'
-  WHERE case_id = {{data_table.selectedRow.case_id}}; 
+  WHERE case_id = {{data_tablea.selectedRow.case_id}}; 

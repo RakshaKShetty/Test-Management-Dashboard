@@ -1,0 +1,2 @@
+INSERT INTO public.test_case_labels ("test_case_id", "label_name" )
+  VALUES ({{this.params.caseID }}, '{{this.params.labelname}}');

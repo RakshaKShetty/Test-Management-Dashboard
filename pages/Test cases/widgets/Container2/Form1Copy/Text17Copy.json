@@ -41,7 +41,7 @@
   "responsiveBehavior": "fill",
   "rightColumn": 63,
   "shouldTruncate": false,
-  "text": "Update Test Case {{data_table.selectedRow.case_id}}",
+  "text": "Update Test Case {{data_tablea.selectedRow.case_id}}",
   "textAlign": "LEFT",
   "textColor": "#231F20",
   "topRow": 1,

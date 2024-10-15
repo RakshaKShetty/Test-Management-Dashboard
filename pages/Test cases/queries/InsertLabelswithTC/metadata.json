@@ -1,16 +1,16 @@
 {
-  "gitSyncId": "66fe5b3e3bcd8736322593bd_44266b5c-79eb-4dd8-9342-76753b0511f6",
-  "id": "Test cases_FetchTCs",
+  "gitSyncId": "670e5426f395d0500c06975c_40b2bbf9-105b-47ab-883d-afb701e33751",
+  "id": "Test cases_InsertLabelswithTC",
   "pluginId": "postgres-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT *\nFROM public.test_cases\nWHERE \n    ('{{SelectTag.selectedOptionLabel}}' = '' OR label_name = '{{SelectTag.selectedOptionLabel}}')\nORDER BY case_id DESC LIMIT {{data_tablea.pageSize}} OFFSET {{data_tablea.pageOffset}}\n",
+      "body": "INSERT INTO public.test_case_labels (\"test_case_id\", \"label_name\" )\n  VALUES ({{this.params.caseID }}, '{{this.params.labelname}}');",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
         {
-          "value": false
+          "value": true
         }
       ],
       "timeoutInMillisecond": 10000
@@ -28,7 +28,7 @@
       }
     ],
     "executeOnLoad": false,
-    "name": "FetchTCs",
+    "name": "InsertLabelswithTC",
     "pageId": "Test cases",
     "userSetOnLoad": false
   }

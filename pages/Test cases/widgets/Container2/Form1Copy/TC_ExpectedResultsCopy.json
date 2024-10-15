@@ -5,7 +5,7 @@
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 60,
   "boxShadow": "none",
-  "defaultText": "{{data_table.selectedRow.expected_results}}",
+  "defaultText": "{{data_table.selectedRow.tc_er}}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -41,8 +41,8 @@
   "mobileRightColumn": 28,
   "mobileTopRow": 21,
   "needsErrorInfo": false,
-  "originalBottomRow": 52,
-  "originalTopRow": 38,
+  "originalBottomRow": 60,
+  "originalTopRow": 46,
   "parentColumnSpace": 3.2421875,
   "parentId": "32irul4bjr",
   "parentRowSpace": 10,
