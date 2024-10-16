@@ -1,6 +1,6 @@
 {
-  "gitSyncId": "6705065fd4c7d74e2813972c_b76823c2-af28-45ca-bc05-6e2d493859f3",
-  "id": "Test run details_TestRunManagement.getTRprogess",
+  "gitSyncId": "670e5426f395d0500c06975c_5b7dfefa-6697-4c4b-a61b-62e784d919b6",
+  "id": "Test run details_TestRunManagement.getTRprogress2",
   "pluginId": "js-plugin",
   "pluginType": "JS",
   "unpublishedAction": {
@@ -28,8 +28,8 @@
       }
     ],
     "executeOnLoad": true,
-    "fullyQualifiedName": "TestRunManagement.getTRprogess",
-    "name": "getTRprogess",
+    "fullyQualifiedName": "TestRunManagement.getTRprogress2",
+    "name": "getTRprogress2",
     "pageId": "Test run details",
     "userSetOnLoad": false
   }

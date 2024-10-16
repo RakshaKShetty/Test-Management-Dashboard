@@ -2,7 +2,7 @@ export default {
 	myVar1: [],
 	myVar2: {},
 
-	async	queryTransform(a = FilterTags.selectedOptionLabels) {
+	async	queryTransform(a=FilterTags.selectedOptionLabels) {
 
 		if (a.length == 0 )
 

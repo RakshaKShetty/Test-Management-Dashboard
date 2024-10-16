@@ -29,44 +29,41 @@ export default {
 		} 
 
 	},
-	async getTRprogess (runid=appsmith.URL.queryParams.trid)
-	{
-		//const passcount =  await Total_Passed_cases_in_a_run.run(runid)
+	async getTRprogress2(runid = appsmith.URL.queryParams.trid) {
+  // Fetch total number of test cases for the given test run
+  await FetchTCsforIndividualTR.run();
 
+  // Get total number of test cases
+  const totalcount = FetchTCsforIndividualTR.data.length;
 
-		await FetchTCsforIndividualTR.run()
-		const totalcount = FetchTCsforIndividualTR.data.length
+  // Fetch the passed test cases data for the given runid
+  const data = await Total_Passed_cases_in_a_run.run({ runid });
 
-		let data = await Total_Passed_cases_in_a_run.run({runid})
+  // Handle the case where no passed cases are returned
+  if (!data || data.length === 0 || data[0].passedcount === null) {
+    return 0;
+  } else {
+    // Extract passed count
+    const passedcount = data[0].passedcount;
 
-		if (data == [])
-		{
-			return 0 
-		}
-		else{
-			const passedcount= Total_Passed_cases_in_a_run.data[0].passedcount
+    // Calculate progress percentage
+    const progress = (passedcount / totalcount) * 100;
 
-
-			const progress = (passedcount/totalcount )*100
-
-			if (progress > 0 )
-				return Math.floor(progress)
-
-			else return 0
-
-
-		}
-	},
+    // Return the floored progress if greater than 0, otherwise 0
+    return progress > 0 ? Math.floor(progress) : 0;
+  }
+},
 	async getTRprogess1 (runid = '31')
 	{
 		//const passcount =  await Total_Passed_cases_in_a_run.run(runid)
 		//await FetchTCsforIndividualTR.run()
 		/// 	const totalcount = FetchTCsforIndividualTR.data.length
 
-		return await Total_Passed_cases_in_a_run.run({runid})
+		 await Total_Passed_cases_in_a_run.run({runid})
 		//const passedcount= Total_Passed_cases_in_a_run.data[0].passedcount
 		// return passedcount
 		//return (passedcount/totalcount )*100
+		//Total_Passed_cases_in_a_run.data[0].passedcount
 
 
 	}

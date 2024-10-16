@@ -30,6 +30,6 @@
     "executeOnLoad": false,
     "name": "FetchTC",
     "pageId": "Test runs",
-    "userSetOnLoad": false
+    "userSetOnLoad": true
   }
 }

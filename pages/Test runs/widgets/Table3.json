@@ -1,20 +1,28 @@
 {
   "accentColor": "{{appsmith.theme.colors.primaryColor}}",
   "animateLoading": true,
+  "borderColor": "#E0DEDE",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 128,
+  "borderWidth": "1",
+  "bottomRow": 165,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
-  "cellBackground": "",
+  "canFreezeColumn": true,
   "childStylesheet": {
     "button": {
       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
       "boxShadow": "none",
       "buttonColor": "{{appsmith.theme.colors.primaryColor}}"
     },
+    "editActions": {
+      "discardBorderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "discardButtonColor": "{{appsmith.theme.colors.primaryColor}}",
+      "saveBorderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "saveButtonColor": "{{appsmith.theme.colors.primaryColor}}"
+    },
     "iconButton": {
       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
       "boxShadow": "none",
-      "menuColor": "{{appsmith.theme.colors.primaryColor}}"
+      "buttonColor": "{{appsmith.theme.colors.primaryColor}}"
     },
     "menuButton": {
       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
@@ -25,58 +33,19 @@
   "columnOrder": [
     "test_case_id",
     "test_case_name",
-    "tlc_label_name",
     "tc_desc",
     "tc_steps",
     "tc_autostatus",
-    "tc_er"
+    "tc_er",
+    "tlc_label_name"
   ],
-  "columnSizeMap": {
-    "status": 75,
-    "step": 62,
-    "task": 245
-  },
-  "columnUpdatedAt": 1729030511901,
-  "columnWidthMap": {
-    "case_id": 75,
-    "description": 161,
-    "name": 114,
-    "test_case_id": 75
-  },
+  "columnUpdatedAt": 1729031562916,
+  "columnWidthMap": {},
   "defaultPageSize": 0,
-  "defaultSelectedRowIndex": "0",
-  "defaultSelectedRowIndices": "{{FetchTCsforIndividualTR.data.map((_, index) => index);}}\n",
+  "defaultSelectedRowIndex": 0,
+  "defaultSelectedRowIndices": "[\n  0,1,2\n]",
   "delimiter": ",",
-  "derivedColumns": {
-    "customColumn1": {
-      "borderRadius": "0px",
-      "boxShadow": "none",
-      "buttonColor": "#DD4B34",
-      "buttonLabel": "{{data_table.processedTableData.map((currentRow, currentIndex) => ( 'Delete'))}}",
-      "buttonLabelColor": "#FFFFFF",
-      "buttonStyle": "rgb(3, 179, 101)",
-      "columnType": "button",
-      "computedValue": "",
-      "enableFilter": true,
-      "enableSort": true,
-      "id": "customColumn1",
-      "index": 5,
-      "isCellVisible": true,
-      "isDerived": true,
-      "isDisabled": false,
-      "isVisible": true,
-      "label": "Delete",
-      "labelColor": "#FFFFFF",
-      "menuColor": "#03B365",
-      "onClick": "{{showModal('Delete_Modal')}}",
-      "width": 150
-    }
-  },
-  "displayName": "Table",
   "dynamicBindingPathList": [
-    {
-      "key": "derivedColumns.customColumn1.buttonLabel"
-    },
     {
       "key": "accentColor"
     },
@@ -87,22 +56,16 @@
       "key": "boxShadow"
     },
     {
-      "key": "defaultSelectedRowIndices"
-    },
-    {
-      "key": "primaryColumns.tc_desc.computedValue"
-    },
-    {
-      "key": "primaryColumns.tlc_label_name.computedValue"
-    },
-    {
-      "key": "isVisible"
+      "key": "tableData"
     },
     {
       "key": "primaryColumns.test_case_id.computedValue"
     },
     {
       "key": "primaryColumns.test_case_name.computedValue"
+    },
+    {
+      "key": "primaryColumns.tc_desc.computedValue"
     },
     {
       "key": "primaryColumns.tc_steps.computedValue"
@@ -114,81 +77,50 @@
       "key": "primaryColumns.tc_er.computedValue"
     },
     {
-      "key": "totalRecordsCount"
-    },
-    {
-      "key": "tableData"
+      "key": "primaryColumns.tlc_label_name.computedValue"
     }
   ],
   "dynamicPropertyPathList": [
     {
       "key": "tableData"
-    },
-    {
-      "key": "onPageChange"
-    },
-    {
-      "key": "isVisible"
-    },
-    {
-      "key": "cellBackground"
     }
   ],
-  "dynamicTriggerPathList": [
-    {
-      "key": "onPageChange"
-    },
-    {
-      "key": "onSearchTextChanged"
-    },
-    {
-      "key": "onSort"
-    },
-    {
-      "key": "onRowSelected"
-    }
-  ],
+  "dynamicTriggerPathList": [],
   "enableClientSideSearch": true,
-  "enableServerSideFiltering": false,
-  "hideCard": false,
+  "flexVerticalAlignment": "start",
   "horizontalAlignment": "LEFT",
-  "iconSVG": "/static/media/icon.db8a9cbd.svg",
   "inlineEditingSaveOption": "ROW_LEVEL",
   "isLoading": false,
   "isSortable": true,
-  "isVisible": "{{data_tableCopy.selectedRow.run_id>0}}",
-  "isVisibleDownload": false,
-  "isVisibleFilters": true,
+  "isVisible": true,
+  "isVisibleDownload": true,
+  "isVisibleFilters": false,
   "isVisiblePagination": true,
   "isVisibleSearch": true,
-  "key": "zba5qel0au",
+  "key": "zddo9hczj6",
   "label": "Data",
-  "labelTextSize": "0.875rem",
-  "leftColumn": 0,
+  "leftColumn": 9,
+  "minWidth": 450,
+  "mobileBottomRow": 165,
+  "mobileLeftColumn": 9,
+  "mobileRightColumn": 43,
+  "mobileTopRow": 137,
   "multiRowSelection": true,
-  "onPageChange": "{{JSObject1.fetchAllTRCases()}}",
-  "onRowSelected": "",
-  "onSearchTextChanged": "",
-  "onSort": "",
-  "originalBottomRow": 128,
-  "originalTopRow": 70,
-  "parentColumnSpace": 12.021583557128906,
-  "parentId": "g7eqbhv2n6",
+  "needsErrorInfo": false,
+  "parentColumnSpace": 13.0625,
+  "parentId": "0",
   "parentRowSpace": 10,
-  "primaryColumnId": "id",
   "primaryColumns": {
     "tc_autostatus": {
       "alias": "tc_autostatus",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
-      "cellBackground": "",
       "columnType": "checkbox",
-      "computedValue": "{{TestCaseCopy.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"tc_autostatus\"]))}}",
+      "computedValue": "{{Table3.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"tc_autostatus\"]))}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,
       "enableSort": true,
-      "fontStyle": "",
       "horizontalAlignment": "LEFT",
       "id": "tc_autostatus",
       "index": 4,
@@ -199,12 +131,11 @@
       "isDiscardVisible": true,
       "isEditable": false,
       "isSaveVisible": true,
-      "isVisible": false,
+      "isVisible": true,
       "label": "tc_autostatus",
       "notation": "standard",
       "originalId": "tc_autostatus",
       "sticky": "",
-      "textColor": "",
       "textSize": "0.875rem",
       "thousandSeparator": true,
       "validation": {},
@@ -215,16 +146,15 @@
       "alias": "tc_desc",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
-      "cellBackground": "",
       "columnType": "text",
-      "computedValue": "{{TestCaseCopy.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"tc_desc\"]))}}",
+      "computedValue": "{{Table3.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"tc_desc\"]))}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,
       "enableSort": true,
       "horizontalAlignment": "LEFT",
       "id": "tc_desc",
-      "index": 1,
+      "index": 2,
       "isCellEditable": false,
       "isCellVisible": true,
       "isDerived": false,
@@ -233,7 +163,7 @@
       "isEditable": false,
       "isSaveVisible": true,
       "isVisible": true,
-      "label": "Description",
+      "label": "tc_desc",
       "notation": "standard",
       "originalId": "tc_desc",
       "sticky": "",
@@ -247,14 +177,12 @@
       "alias": "tc_er",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
-      "cellBackground": "",
       "columnType": "text",
-      "computedValue": "{{TestCaseCopy.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"tc_er\"]))}}",
+      "computedValue": "{{Table3.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"tc_er\"]))}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,
       "enableSort": true,
-      "fontStyle": "",
       "horizontalAlignment": "LEFT",
       "id": "tc_er",
       "index": 5,
@@ -265,12 +193,11 @@
       "isDiscardVisible": true,
       "isEditable": false,
       "isSaveVisible": true,
-      "isVisible": false,
+      "isVisible": true,
       "label": "tc_er",
       "notation": "standard",
       "originalId": "tc_er",
       "sticky": "",
-      "textColor": "",
       "textSize": "0.875rem",
       "thousandSeparator": true,
       "validation": {},
@@ -281,14 +208,12 @@
       "alias": "tc_steps",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
-      "cellBackground": "",
       "columnType": "text",
-      "computedValue": "{{TestCaseCopy.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"tc_steps\"]))}}",
+      "computedValue": "{{Table3.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"tc_steps\"]))}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,
       "enableSort": true,
-      "fontStyle": "",
       "horizontalAlignment": "LEFT",
       "id": "tc_steps",
       "index": 3,
@@ -299,12 +224,11 @@
       "isDiscardVisible": true,
       "isEditable": false,
       "isSaveVisible": true,
-      "isVisible": false,
+      "isVisible": true,
       "label": "tc_steps",
       "notation": "standard",
       "originalId": "tc_steps",
       "sticky": "",
-      "textColor": "",
       "textSize": "0.875rem",
       "thousandSeparator": true,
       "validation": {},
@@ -315,14 +239,12 @@
       "alias": "test_case_id",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
-      "cellBackground": "",
       "columnType": "number",
-      "computedValue": "{{TestCaseCopy.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"test_case_id\"]))}}",
+      "computedValue": "{{Table3.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"test_case_id\"]))}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,
       "enableSort": true,
-      "fontStyle": "",
       "horizontalAlignment": "LEFT",
       "id": "test_case_id",
       "index": 0,
@@ -334,11 +256,10 @@
       "isEditable": false,
       "isSaveVisible": true,
       "isVisible": true,
-      "label": "TC ID",
+      "label": "test_case_id",
       "notation": "standard",
       "originalId": "test_case_id",
       "sticky": "",
-      "textColor": "",
       "textSize": "0.875rem",
       "thousandSeparator": true,
       "validation": {},
@@ -349,14 +270,12 @@
       "alias": "test_case_name",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
-      "cellBackground": "",
       "columnType": "text",
-      "computedValue": "{{TestCaseCopy.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"test_case_name\"]))}}",
+      "computedValue": "{{Table3.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"test_case_name\"]))}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,
       "enableSort": true,
-      "fontStyle": "",
       "horizontalAlignment": "LEFT",
       "id": "test_case_name",
       "index": 1,
@@ -368,11 +287,10 @@
       "isEditable": false,
       "isSaveVisible": true,
       "isVisible": true,
-      "label": "TC Name",
+      "label": "test_case_name",
       "notation": "standard",
       "originalId": "test_case_name",
       "sticky": "",
-      "textColor": "",
       "textSize": "0.875rem",
       "thousandSeparator": true,
       "validation": {},
@@ -383,16 +301,15 @@
       "alias": "tlc_label_name",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
-      "cellBackground": "",
       "columnType": "text",
-      "computedValue": "{{TestCaseCopy.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"tlc_label_name\"]))}}",
+      "computedValue": "{{Table3.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"tlc_label_name\"]))}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,
       "enableSort": true,
       "horizontalAlignment": "LEFT",
       "id": "tlc_label_name",
-      "index": 2,
+      "index": 6,
       "isCellEditable": false,
       "isCellVisible": true,
       "isDerived": false,
@@ -401,7 +318,7 @@
       "isEditable": false,
       "isSaveVisible": true,
       "isVisible": true,
-      "label": "Label(s)",
+      "label": "tlc_label_name",
       "notation": "standard",
       "originalId": "tlc_label_name",
       "sticky": "",
@@ -413,17 +330,16 @@
     }
   },
   "renderMode": "CANVAS",
-  "rightColumn": 64,
+  "responsiveBehavior": "fill",
+  "rightColumn": 43,
   "searchKey": "",
-  "serverSidePaginationEnabled": true,
-  "showInlineEditingOptionDropdown": true,
-  "tableData": "{{JSObject1.fetchAllTRCases.data}}",
+  "tableData": "{{FetchTC.data}}",
   "textSize": "0.875rem",
-  "topRow": 70,
-  "totalRecordsCount": "{{TC_Count.data[0].count}}",
+  "topRow": 137,
+  "totalRecordsCount": 0,
   "type": "TABLE_WIDGET_V2",
-  "version": 3,
+  "version": 2,
   "verticalAlignment": "CENTER",
-  "widgetId": "nr6xcdqo57",
-  "widgetName": "TestCaseCopy"
+  "widgetId": "r2pvurf1pa",
+  "widgetName": "Table3"
 }
