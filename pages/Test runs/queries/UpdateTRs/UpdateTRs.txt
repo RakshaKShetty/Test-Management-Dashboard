@@ -1,8 +1,8 @@
 UPDATE public."test_runs" SET
-    "run_name" = '{{TRNameCopy.text}}',
-    "pr_number" = '{{PRNumberCopy.text}}',
+    "run_name" = $${{TRNameCopy.text}}$$,
+    "pr_number" = $${{PRNumberCopy.text}}$$,
   
- 		"description" = '{{TRDescCopy.text}}',
+ 		"description" = $${{TRDescCopy.text}}$$,
     "browser" = '{{TR_browserCopy.text}}',
     "os" = '{{TR_OSCopy.selectedOptionLabel}}',
     "environment" = '{{TR_EnvironmentCopy.selectedOptionLabel}}'

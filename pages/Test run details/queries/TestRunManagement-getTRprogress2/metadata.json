@@ -1,6 +1,6 @@
 {
-  "gitSyncId": "6705065fd4c7d74e2813972c_45655fb1-4c3a-45e3-a7f5-3fc1ca699386",
-  "id": "Test run details_TestRunManagement.getTRprogess1",
+  "gitSyncId": "670f721b83ebd02df0778a35_edc7da19-b4b2-4747-b639-25f4daef141f",
+  "id": "Test run details_TestRunManagement.getTRprogress2",
   "pluginId": "js-plugin",
   "pluginType": "JS",
   "unpublishedAction": {
@@ -9,7 +9,7 @@
       "jsArguments": [
         {
           "name": "runid",
-          "value": "31"
+          "value": "{{appsmith.URL.queryParams.trid}}"
         }
       ],
       "paginationType": "NONE",
@@ -27,9 +27,9 @@
         "key": "body"
       }
     ],
-    "executeOnLoad": false,
-    "fullyQualifiedName": "TestRunManagement.getTRprogess1",
-    "name": "getTRprogess1",
+    "executeOnLoad": true,
+    "fullyQualifiedName": "TestRunManagement.getTRprogress2",
+    "name": "getTRprogress2",
     "pageId": "Test run details",
     "userSetOnLoad": false
   }
