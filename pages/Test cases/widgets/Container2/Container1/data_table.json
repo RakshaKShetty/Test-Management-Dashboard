@@ -93,6 +93,9 @@
   "dynamicPropertyPathList": [
     {
       "key": "tableData"
+    },
+    {
+      "key": "onPageChange"
     }
   ],
   "dynamicTriggerPathList": [
@@ -123,7 +126,7 @@
   "mobileRightColumn": 35,
   "mobileTopRow": 13,
   "needsErrorInfo": false,
-  "onPageChange": "{{FetchTC.run()}}",
+  "onPageChange": "{{JSObject1.fetchAllCases()}}",
   "onRowSelected": "",
   "parentColumnSpace": 7.45703125,
   "parentId": "tngnza05pu",
