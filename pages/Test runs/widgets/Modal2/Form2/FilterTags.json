@@ -50,7 +50,7 @@
   "mobileRightColumn": 20,
   "mobileTopRow": 36,
   "needsErrorInfo": false,
-  "onOptionChange": "{{FetchTC.run()}}",
+  "onOptionChange": "{{JSObject1.fetchAllCases()}}",
   "optionLabel": "label",
   "optionValue": "label",
   "parentColumnSpace": 11.893749999999999,
