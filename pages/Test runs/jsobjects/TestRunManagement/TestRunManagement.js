@@ -11,7 +11,7 @@ export default {
 	 for (let i = 0 ; i < selectedTC.length ; i++){
 		 
 		 {
-			InsertTCinTR.run({runID: a , caseID:selectedTC[i].case_id }) 
+			InsertTCinTR.run({runID: a , caseID:selectedTC[i].test_case_id }) 
 		 }
 	 
 	
@@ -69,10 +69,10 @@ export default {
 	const a = data_tableCopy.selectedRow.run_id
 	
 	//const selectedTC = (TestCaseCopy.selectedRows)
-	 for (let i = 0 ; i < selectedTC.length ; i++){
+	 for (let i = 0 ; i < a.length ; i++){
 		 
 		 {
-	//		InsertTCinTR.run({runID: a , caseID:selectedTC[i].case_id }) 
+	InsertTCinTR.run({runID: a , caseID:a[i].test_case_id }) 
 		 }
 	 Fetch_TRs.run()
 	//	 FetchTCsforIndividualTR.run()
