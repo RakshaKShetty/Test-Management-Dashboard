@@ -37,7 +37,7 @@
   "mobileRightColumn": 28,
   "mobileTopRow": 0,
   "needsErrorInfo": false,
-  "overflow": "NONE",
+  "overflow": "SCROLL",
   "parentId": "yxyxrth1il",
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",

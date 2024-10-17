@@ -7,7 +7,7 @@ export default {
 	let  currentID = 	await Insert_TRs.run()
 	const a =  currentID[0].run_id ;
 	
-	const selectedTC = (TestCase.selectedRows)
+	const selectedTC = paginationLogic.UpdateDataInList.data
 	 for (let i = 0 ; i < selectedTC.length ; i++){
 		 
 		 {

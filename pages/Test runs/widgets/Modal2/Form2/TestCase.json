@@ -36,12 +36,13 @@
     "step": 62,
     "task": 245
   },
-  "columnUpdatedAt": 1729157080098,
+  "columnUpdatedAt": 1729160709269,
   "columnWidthMap": {
     "customColumn1": 114,
     "description": 262,
     "name": 135,
     "tc_er": 224,
+    "tc_steps": 169,
     "test_case_id": 73,
     "test_case_name": 165
   },
@@ -306,7 +307,7 @@
       "isDiscardVisible": true,
       "isEditable": false,
       "isSaveVisible": true,
-      "isVisible": true,
+      "isVisible": false,
       "label": "Expected Results",
       "notation": "standard",
       "originalId": "tc_er",
@@ -340,7 +341,7 @@
       "isDiscardVisible": true,
       "isEditable": false,
       "isSaveVisible": true,
-      "isVisible": true,
+      "isVisible": false,
       "label": "Steps",
       "notation": "standard",
       "originalId": "tc_steps",
