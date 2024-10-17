@@ -149,7 +149,7 @@
   "labelTextSize": "0.875rem",
   "leftColumn": 0,
   "multiRowSelection": true,
-  "onPageChange": "{{FetchTC.run()}}",
+  "onPageChange": "{{JSObject1.fetchAllCases()}}",
   "onSearchTextChanged": "",
   "onSort": "",
   "originalBottomRow": 60,

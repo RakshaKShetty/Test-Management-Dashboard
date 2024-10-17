@@ -4,13 +4,16 @@
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 53,
   "boxShadow": "none",
-  "defaultOptionValue": "Deploy-Preview",
+  "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( data_tableCopy.selectedRow.environment))(TR_EnvironmentCopy.options, TR_EnvironmentCopy.serverSideFiltering) }}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
     },
     {
       "key": "borderRadius"
+    },
+    {
+      "key": "defaultOptionValue"
     }
   ],
   "dynamicHeight": "FIXED",
