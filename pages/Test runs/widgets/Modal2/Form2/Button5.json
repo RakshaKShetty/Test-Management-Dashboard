@@ -15,7 +15,7 @@
       "key": "borderRadius"
     },
     {
-      "key": "isDisabled"
+      "key": "isVisible"
     }
   ],
   "dynamicPropertyPathList": [
@@ -23,7 +23,7 @@
       "key": "onClick"
     },
     {
-      "key": "isDisabled"
+      "key": "isVisible"
     }
   ],
   "dynamicTriggerPathList": [
@@ -32,9 +32,9 @@
     }
   ],
   "isDefaultClickDisabled": true,
-  "isDisabled": "{{!(TRName.text.length>0 && TestCase.selectedRows.length>0)}}",
+  "isDisabled": false,
   "isLoading": false,
-  "isVisible": true,
+  "isVisible": "{{List1.listData.length>0}}",
   "key": "ge27e6c97b",
   "leftColumn": 48,
   "minWidth": 120,
