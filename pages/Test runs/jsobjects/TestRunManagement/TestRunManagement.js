@@ -1,5 +1,5 @@
 export default {
-	myVar1: [],
+	myVar1: ["a","b"],
 	myVar2: {},
 	
 	async insertTR () {
@@ -45,19 +45,6 @@ export default {
 			 return Math.floor(progress)
 		
 		else return 0
-		 
-	  
-	},
-	async getTRprogess1 (runid = '26')
-	{
-	 //const passcount =  await Total_Passed_cases_in_a_run.run(runid)
-	//await FetchTCsforIndividualTR.run()
-	/// 	const totalcount = FetchTCsforIndividualTR.data.length
-		
-	return await Total_Passed_cases_in_a_run.run({runid})
-		 //const passedcount= Total_Passed_cases_in_a_run.data[0].passedcount
-		// return passedcount
-		 //return (passedcount/totalcount )*100
 		 
 	  
 	},

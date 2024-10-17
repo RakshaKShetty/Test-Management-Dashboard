@@ -5,7 +5,7 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT *\nFROM public.test_cases\nWHERE \n    ('{{FilterTags.selectedOptionLabel}}' = '' OR label_name = '{{FilterTags.selectedOptionLabel}}')\n\t\nORDER BY case_id \tLIMIT {{TestCase.pageSize}} OFFSET {{TestCase.pageOffset}}\n\t\t\n",
+      "body": "SELECT\n    \n    tc.case_id AS test_case_id,\n\t\ttc.name as test_case_name ,\n    tc.description as tc_desc,\n\t\ttc.steps as tc_steps ,\n\t\ttc.automated_status as tc_autostatus, \n\t\ttc.expected_results as tc_er,\n\t\tARRAY_AGG(tlc.label_name) as tlc_label_name\n\t\t\nFROM\n    test_cases tc\nINNER JOIN\n    test_case_labels tlc\n\t\tON tc.case_id = tlc.test_case_id\n\t\t \n  WHERE \n    \n     tc.case_id = ANY(ARRAY[{{this.params.list}}]) \n\t\t\n\tGROUP By tc.case_id\n\tORDER BY tc.case_id DESC \n\t\n",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [

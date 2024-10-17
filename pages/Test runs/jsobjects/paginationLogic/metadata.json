@@ -1,0 +1,16 @@
+{
+  "gitSyncId": "6710c9e90a618e67979fe79b_1afcd117-4af6-46a2-97cf-975f62a1e265",
+  "id": "Test runs_paginationLogic",
+  "unpublishedCollection": {
+    "name": "paginationLogic",
+    "pageId": "Test runs",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": [
+      {
+        "name": "myArray",
+        "value": "[]"
+      }
+    ]
+  }
+}

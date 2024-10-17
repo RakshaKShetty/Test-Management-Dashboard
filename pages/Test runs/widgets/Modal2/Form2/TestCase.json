@@ -28,17 +28,20 @@
     "tlc_label_name",
     "tc_autostatus",
     "tc_steps",
-    "tc_er"
+    "tc_er",
+    "customColumn1"
   ],
   "columnSizeMap": {
     "status": 75,
     "step": 62,
     "task": 245
   },
-  "columnUpdatedAt": 1729021396297,
+  "columnUpdatedAt": 1729157080098,
   "columnWidthMap": {
+    "customColumn1": 114,
     "description": 262,
     "name": 135,
+    "tc_er": 224,
     "test_case_id": 73,
     "test_case_name": 165
   },
@@ -110,6 +113,15 @@
     },
     {
       "key": "totalRecordsCount"
+    },
+    {
+      "key": "primaryColumns.customColumn1.boxShadow"
+    },
+    {
+      "key": "primaryColumns.customColumn1.borderRadius"
+    },
+    {
+      "key": "primaryColumns.customColumn1.buttonColor"
     }
   ],
   "dynamicPropertyPathList": [
@@ -118,6 +130,9 @@
     },
     {
       "key": "onPageChange"
+    },
+    {
+      "key": "primaryColumns.customColumn1.onClick"
     }
   ],
   "dynamicTriggerPathList": [
@@ -129,6 +144,9 @@
     },
     {
       "key": "onSort"
+    },
+    {
+      "key": "primaryColumns.customColumn1.onClick"
     }
   ],
   "enableClientSideSearch": true,
@@ -148,17 +166,56 @@
   "label": "Data",
   "labelTextSize": "0.875rem",
   "leftColumn": 0,
-  "multiRowSelection": true,
+  "multiRowSelection": false,
   "onPageChange": "{{JSObject1.fetchAllCases()}}",
   "onSearchTextChanged": "",
   "onSort": "",
-  "originalBottomRow": 60,
-  "originalTopRow": 15,
+  "originalBottomRow": 89,
+  "originalTopRow": 44,
   "parentColumnSpace": 12.021583557128906,
   "parentId": "pctwlhlpqe",
   "parentRowSpace": 10,
   "primaryColumnId": "id",
   "primaryColumns": {
+    "customColumn1": {
+      "alias": "Add Cases",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "borderRadius": "{{TestCase.processedTableData.map((currentRow, currentIndex) => ( (appsmith.theme.borderRadius.appBorderRadius)))}}",
+      "boxShadow": "{{TestCase.processedTableData.map((currentRow, currentIndex) => ( \"none\"))}}",
+      "buttonColor": "{{TestCase.processedTableData.map((currentRow, currentIndex) => ( (appsmith.theme.colors.primaryColor)))}}",
+      "buttonLabel": "Add",
+      "buttonStyle": "rgb(3, 179, 101)",
+      "columnType": "button",
+      "computedValue": "",
+      "currencyCode": "USD",
+      "customAlias": "",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "horizontalAlignment": "LEFT",
+      "id": "customColumn1",
+      "index": 7,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": true,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "Add Cases",
+      "labelColor": "#FFFFFF",
+      "notation": "standard",
+      "onClick": "{{ \n  storeValue('TCs', TestCase.triggeredRow.test_case_id)\n    .then(() => {\n      return paginationLogic.store(); // Ensure to return the promise\n    })\n    .then(() => {\n      paginationLogic.UpdateDataInList(); // This runs after store() resolves\n    })\n    .catch(error => {\n      console.error('Error:', error); // Handle errors if needed\n    });\n}}\n",
+      "originalId": "customColumn1",
+      "sticky": "right",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
     "tc_autostatus": {
       "alias": "tc_autostatus",
       "allowCellWrapping": false,
@@ -399,7 +456,7 @@
     }
   },
   "renderMode": "CANVAS",
-  "rightColumn": 64,
+  "rightColumn": 34,
   "searchKey": "",
   "serverSidePaginationEnabled": true,
   "showInlineEditingOptionDropdown": true,

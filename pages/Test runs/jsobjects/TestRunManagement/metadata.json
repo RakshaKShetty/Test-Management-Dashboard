@@ -9,7 +9,7 @@
     "variables": [
       {
         "name": "myVar1",
-        "value": "[]"
+        "value": "[\"a\", \"b\"]"
       },
       {
         "name": "myVar2",

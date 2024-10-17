@@ -1,0 +1,53 @@
+{
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 44,
+  "boxShadow": "none",
+  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+  "buttonVariant": "SECONDARY",
+  "dynamicBindingPathList": [
+    {
+      "key": "buttonColor"
+    },
+    {
+      "key": "borderRadius"
+    }
+  ],
+  "dynamicPropertyPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "iconName": "reset",
+  "isDisabled": false,
+  "isLoading": false,
+  "isVisible": true,
+  "key": "2heb1m634g",
+  "leftColumn": 59,
+  "minWidth": 50,
+  "mobileBottomRow": 44,
+  "mobileLeftColumn": 59,
+  "mobileRightColumn": 63,
+  "mobileTopRow": 40,
+  "needsErrorInfo": false,
+  "onClick": "{{paginationLogic.resetStore()\n  .then(() => {\n    paginationLogic.UpdateDataInList();\n  })\n  .catch(error => {\n    console.error('Error:', error); // Handle any errors if needed\n  });}}",
+  "originalBottomRow": 44,
+  "originalTopRow": 40,
+  "parentColumnSpace": 11.893749999999999,
+  "parentId": "pctwlhlpqe",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "hug",
+  "rightColumn": 63,
+  "tooltip": "Reset TCs Selection",
+  "topRow": 40,
+  "type": "ICON_BUTTON_WIDGET",
+  "version": 1,
+  "widgetId": "u4qg12gzhz",
+  "widgetName": "IconButton1"
+}

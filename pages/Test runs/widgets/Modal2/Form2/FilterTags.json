@@ -53,6 +53,8 @@
   "onOptionChange": "{{JSObject1.fetchAllCases()}}",
   "optionLabel": "label",
   "optionValue": "label",
+  "originalBottomRow": 43,
+  "originalTopRow": 36,
   "parentColumnSpace": 11.893749999999999,
   "parentId": "pctwlhlpqe",
   "parentRowSpace": 10,
