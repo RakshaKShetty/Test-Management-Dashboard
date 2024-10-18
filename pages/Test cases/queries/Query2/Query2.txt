@@ -1,0 +1,1 @@
+SELECT * FROM public."abcd" LIMIT 10;
