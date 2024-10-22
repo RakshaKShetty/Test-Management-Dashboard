@@ -19,5 +19,5 @@ INNER JOIN
      tc.case_id = ANY(ARRAY[{{this.params.list}}]) 
 		
 	GROUP By tc.case_id
-	ORDER BY tc.case_id DESC 
+	ORDER BY tc.case_id  
 	
