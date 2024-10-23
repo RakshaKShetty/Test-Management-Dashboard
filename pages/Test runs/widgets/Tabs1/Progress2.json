@@ -23,7 +23,7 @@
   "isCanvas": false,
   "isIndeterminate": true,
   "isLoading": false,
-  "isVisible": "{{Fetch_TRs.isLoading}}",
+  "isVisible": "{{data_tableCopy.tableData.length<1}}",
   "key": "newibj1vnv",
   "leftColumn": 15,
   "mobileBottomRow": 4,
