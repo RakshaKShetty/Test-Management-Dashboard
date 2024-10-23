@@ -136,6 +136,9 @@
     },
     {
       "key": "onPageChange"
+    },
+    {
+      "key": "primaryColumns.customColumn1.onClick"
     }
   ],
   "dynamicTriggerPathList": [
