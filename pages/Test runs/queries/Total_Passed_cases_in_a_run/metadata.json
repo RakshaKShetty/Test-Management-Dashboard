@@ -27,9 +27,9 @@
         "key": "body"
       }
     ],
-    "executeOnLoad": true,
+    "executeOnLoad": false,
     "name": "Total_Passed_cases_in_a_run",
     "pageId": "Test runs",
-    "userSetOnLoad": false
+    "userSetOnLoad": true
   }
 }
