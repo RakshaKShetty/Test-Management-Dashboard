@@ -17,7 +17,7 @@
       "key": "defaultText"
     }
   ],
-  "dynamicHeight": "AUTO_HEIGHT",
+  "dynamicHeight": "FIXED",
   "dynamicTriggerPathList": [],
   "iconAlign": "left",
   "inputType": "MULTI_LINE_TEXT",
@@ -41,8 +41,6 @@
   "mobileRightColumn": 28,
   "mobileTopRow": 21,
   "needsErrorInfo": false,
-  "originalBottomRow": 28,
-  "originalTopRow": 15,
   "parentColumnSpace": 3.2421875,
   "parentId": "32irul4bjr",
   "parentRowSpace": 10,
