@@ -26,12 +26,10 @@ async insertTC () {
 	 for (let i = 0 ; i < labels.length ; i++){
 		 
 		{
-		InsertLabelswithTC.run({caseID: a , labelname: labels[i].toString()}) 
-		 } 
-		JSObject1.fetchAllCases()
-	
-	
+await	InsertLabelswithTC.run({caseID: a , labelname: labels[i].toString()}) 
+		 } 	
 	}
+			JSObject1.fetchAllCases()
 	}
 	
 }
