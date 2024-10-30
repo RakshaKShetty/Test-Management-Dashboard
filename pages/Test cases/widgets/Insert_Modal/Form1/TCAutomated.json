@@ -2,9 +2,9 @@
   "accentColor": "{{appsmith.theme.colors.primaryColor}}",
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 59,
+  "bottomRow": 75,
   "boxShadow": "none",
-  "defaultOptionValue": "",
+  "defaultOptionValue": "false",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -53,7 +53,7 @@
   "rightColumn": 63,
   "serverSideFiltering": false,
   "sourceData": "[\n  {\n    \"name\": \"true\",\n    \"code\": \"true\"\n  },\n  {\n    \"name\": \"false\",\n    \"code\": \"false\"\n  }\n]",
-  "topRow": 52,
+  "topRow": 68,
   "type": "SELECT_WIDGET",
   "version": 1,
   "widgetId": "tdef74ocop",

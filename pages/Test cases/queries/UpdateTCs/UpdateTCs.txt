@@ -4,6 +4,8 @@ UPDATE public."test_cases" SET
     "description" = $${{TCDescCopy.text}}$$,
     "steps" = $${{TC_StepsCopy.text}}$$ ,
     "expected_results" = $${{TC_ExpectedResultsCopy.text}}$$,
-		"automated_status" ='{{TCAutomatedCopy.selectedOptionLabel.toString()}}'
+		"automated_status" ='{{TCAutomatedCopy.selectedOptionLabel.toString()}}',
+		"oracle_app_link"= $${{TC_OracleLinkCopy.text}}$$,
+		"test_spec_name" = $${{TC_TestSpecCopy.text}}$$
     
   WHERE case_id = {{data_table.selectedRow.test_case_id}}; 

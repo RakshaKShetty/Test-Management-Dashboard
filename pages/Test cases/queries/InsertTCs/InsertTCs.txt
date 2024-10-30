@@ -1,4 +1,4 @@
-INSERT INTO public."test_cases" ("name", "description", "steps", "expected_results","automated_status")
-  VALUES ( $${{TCName.text}}$$, $${{TCDesc.text}}$$, $${{TC_Steps.text}}$$, $${{TC_ExpectedResults.text}}$$,'{{TCAutomated.selectedOptionLabel.toString()}}' )
+INSERT INTO public."test_cases" ("name", "description", "steps", "expected_results","automated_status","oracle_app_link", "test_spec_name")
+  VALUES ( $${{TCName.text}}$$, $${{TCDesc.text}}$$, $${{TC_Steps.text}}$$, $${{TC_ExpectedResults.text}}$$,'{{TCAutomated.selectedOptionLabel.toString()}}',$${{TC_OracleLink.text}}$$,$${{TC_TestSpec.text}}$$ )
 	
 	RETURNING case_id
