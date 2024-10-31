@@ -5,7 +5,7 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT\n    \n    tr.run_name AS test_run_name,\n\t\ttr.pr_number ,\n    trc.status as tc_status,\n\t\ttc.name as tc_name ,\n\t\ttc.description as tc_desc ,\n\t\ttc.expected_results as tc_er ,\n\t\ttc.steps as tc_steps ,\n\t\ttc.automated_status as tc_autostatus, \n\t\ttc.label_name as tc_label,\n\t\ttrc.run_case_id as trc_id\n\t\t\nFROM\n    test_runs tr\nINNER JOIN\n    test_run_cases trc\n    ON tr.run_id = trc.run_id\n\t\tINNER JOIN test_cases tc\n\t\tON tc.case_id = trc.case_id\nWHERE\n    tr.run_id = {{appsmith.URL.queryParams.trid}};",
+      "body": "SELECT\n    \n    tr.run_name AS test_run_name,\n\t\ttr.pr_number ,\n    trc.status as tc_status,\n\t\ttc.name as tc_name ,\n\t\ttc.description as tc_desc ,\n\t\ttc.expected_results as tc_er ,\n\t\ttc.steps as tc_steps ,\n\t\ttc.automated_status as tc_autostatus, \n\t\ttc.label_name as tc_label,\n\t\ttrc.run_case_id as trc_id,\n\t\ttc.oracle_app_link as tc_oraclelink,\n\t\ttc.test_spec_name as tc_spec\n\t\t\nFROM\n    test_runs tr\nINNER JOIN\n    test_run_cases trc\n    ON tr.run_id = trc.run_id\n\t\tINNER JOIN test_cases tc\n\t\tON tc.case_id = trc.case_id\nWHERE\n    tr.run_id = {{appsmith.URL.queryParams.trid}};",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [

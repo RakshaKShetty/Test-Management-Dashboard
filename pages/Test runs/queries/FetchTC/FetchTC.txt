@@ -6,6 +6,8 @@ SELECT
 		tc.steps as tc_steps ,
 		tc.automated_status as tc_autostatus, 
 		tc.expected_results as tc_er,
+		tc.oracle_app_link as tc_oraclelink,
+		tc.test_spec_name as tc_spec,
 		ARRAY_AGG(tlc.label_name) as tlc_label_name
 		
 FROM

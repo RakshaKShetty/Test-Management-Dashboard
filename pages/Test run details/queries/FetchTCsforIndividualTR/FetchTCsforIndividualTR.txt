@@ -9,7 +9,9 @@ SELECT
 		tc.steps as tc_steps ,
 		tc.automated_status as tc_autostatus, 
 		tc.label_name as tc_label,
-		trc.run_case_id as trc_id
+		trc.run_case_id as trc_id,
+		tc.oracle_app_link as tc_oraclelink,
+		tc.test_spec_name as tc_spec
 		
 FROM
     test_runs tr
