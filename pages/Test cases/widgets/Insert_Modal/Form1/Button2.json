@@ -36,7 +36,7 @@
   "mobileRightColumn": 62,
   "mobileTopRow": 33,
   "needsErrorInfo": false,
-  "onClick": "{{TCLogic.insertTC().then(() => {\n  showAlert('Test Case Added Successfully', '');\n  resetWidget(\"Insert_Modal\", true);\n  closeModal(Insert_Modal.name);\n  JSObject1.fetchAllCases();\n});}}",
+  "onClick": "{{TCLogic.insertTC().then(() => {\n  showAlert('Test Case Added Successfully', '');\n  resetWidget(\"Insert_Modal\", true);\n closeModal(Insert_Modal.name);\n});}}",
   "originalBottomRow": 62,
   "originalTopRow": 58,
   "parentId": "rkjlzqotww",

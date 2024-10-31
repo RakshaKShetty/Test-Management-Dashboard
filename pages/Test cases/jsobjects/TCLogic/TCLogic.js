@@ -12,7 +12,7 @@ async insertTC () {
 		{
 		InsertLabelswithTC.run({caseID: a , labelname: labels[i].toString()}) 
 		 } 
-	
+	JSObject1.fetchAllCases()
 	
 	}
 	},
