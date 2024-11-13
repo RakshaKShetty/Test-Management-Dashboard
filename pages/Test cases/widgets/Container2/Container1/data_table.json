@@ -238,7 +238,7 @@
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
       "cellBackground": "",
-      "columnType": "text",
+      "columnType": "url",
       "computedValue": "{{data_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"tc_oraclelink\"]))}}",
       "currencyCode": "USD",
       "decimals": 0,
