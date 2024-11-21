@@ -7,6 +7,11 @@
     "actionConfiguration": {
       "body": "INSERT INTO public.\"test_cases\" (\"name\", \"description\", \"steps\", \"expected_results\",\"automated_status\")\n  VALUES ( $${{TCName.text}}$$, $${{TCDesc.text}}$$, $${{TC_Steps.text}}$$, $${{TC_ExpectedResults.text}}$$,'{{TCAutomated.selectedOptionLabel.toString()}}' )\n\t\n\tRETURNING case_id",
       "encodeParamsToggle": true,
+      "formData": {
+        "entityType": {
+          "data": "ROWS"
+        }
+      },
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
         {

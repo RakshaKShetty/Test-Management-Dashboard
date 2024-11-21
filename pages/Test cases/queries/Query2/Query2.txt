@@ -1,1 +1,2 @@
-SELECT * FROM public."abcd" LIMIT 10;
+DELETE FROM public."test_cases"
+  WHERE case_id = 285 ; -- Specify a valid condition here. Removing the condition may delete everything in the table!

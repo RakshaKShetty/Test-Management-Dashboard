@@ -7,6 +7,11 @@
     "actionConfiguration": {
       "body": "SELECT * FROM public.\"test_case_labels\" ORDER By test_case_id;",
       "encodeParamsToggle": true,
+      "formData": {
+        "entityType": {
+          "data": "ROWS"
+        }
+      },
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
         {

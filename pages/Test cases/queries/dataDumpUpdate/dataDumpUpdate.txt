@@ -1,0 +1,6 @@
+UPDATE public."test_cases"
+SET
+  
+  "description" = $${{this.params.description}}$$,
+
+WHERE "id" = $${{this.params.id}}$$;

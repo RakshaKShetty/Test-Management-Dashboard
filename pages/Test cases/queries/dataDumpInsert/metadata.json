@@ -1,11 +1,11 @@
 {
-  "gitSyncId": "670e5426f395d0500c06975c_40b2bbf9-105b-47ab-883d-afb701e33751",
-  "id": "Test cases_InsertLabelswithTC",
+  "gitSyncId": "671206e6ac43a01744c1e6f0_a30ff238-fd01-4e36-941e-cb76d831d694",
+  "id": "Test cases_dataDumpInsert",
   "pluginId": "postgres-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "INSERT INTO public.test_case_labels (\"test_case_id\", \"label_name\" )\n  VALUES ({{this.params.caseID }}, '{{this.params.labelname}}');",
+      "body": "INSERT INTO public.\"test_cases\" (\"name\", \"description\", \"oracle_app_link\",\"steps\", \"expected_results\",\"automated_status\",\"test_spec_name\")\n  VALUES ( $${{this.params.name}}$$, $${{this.params.description}}$$, $${{this.params.link}}$$,'-', '-','{{this.params.autostatus}}', $${{this.params.testspecname}}$$ )\n\t\n\tRETURNING case_id",
       "encodeParamsToggle": true,
       "formData": {
         "entityType": {
@@ -33,7 +33,7 @@
       }
     ],
     "executeOnLoad": false,
-    "name": "InsertLabelswithTC",
+    "name": "dataDumpInsert",
     "pageId": "Test cases",
     "userSetOnLoad": false
   }

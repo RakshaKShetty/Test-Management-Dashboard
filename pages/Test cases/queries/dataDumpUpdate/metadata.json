@@ -1,16 +1,21 @@
 {
-  "gitSyncId": "6710c9e90a618e67979fe79b_effa6763-a650-4bb0-b811-4099b91337d4",
-  "id": "Test cases_Query2",
+  "gitSyncId": "671206e6ac43a01744c1e6f0_4f91e7c7-6556-41da-85f6-7ed76c324297",
+  "id": "Test cases_dataDumpUpdate",
   "pluginId": "postgres-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "DELETE FROM public.\"test_cases\"\n  WHERE case_id = 285 ; -- Specify a valid condition here. Removing the condition may delete everything in the table!",
+      "body": "UPDATE public.\"test_cases\"\nSET\n  \n  \"description\" = $${{this.params.description}}$$,\n\nWHERE \"id\" = $${{this.params.id}}$$;\n",
       "encodeParamsToggle": true,
+      "formData": {
+        "entityType": {
+          "data": "ROWS"
+        }
+      },
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
         {
-          "value": true
+          "value": false
         }
       ],
       "timeoutInMillisecond": 10000
@@ -22,9 +27,13 @@
       "name": "TestCaseRepo",
       "pluginId": "postgres-plugin"
     },
-    "dynamicBindingPathList": [],
+    "dynamicBindingPathList": [
+      {
+        "key": "body"
+      }
+    ],
     "executeOnLoad": false,
-    "name": "Query2",
+    "name": "dataDumpUpdate",
     "pageId": "Test cases",
     "userSetOnLoad": false
   }

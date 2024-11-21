@@ -1,0 +1,4 @@
+INSERT INTO public."test_cases" ("name", "description", "oracle_app_link","steps", "expected_results","automated_status","test_spec_name")
+  VALUES ( $${{this.params.name}}$$, $${{this.params.description}}$$, $${{this.params.link}}$$,'-', '-','{{this.params.autostatus}}', $${{this.params.testspecname}}$$ )
+	
+	RETURNING case_id

@@ -7,6 +7,11 @@
     "actionConfiguration": {
       "body": "SELECT *\nFROM public.test_cases\n \n\nORDER BY case_id DESC",
       "encodeParamsToggle": true,
+      "formData": {
+        "entityType": {
+          "data": "ROWS"
+        }
+      },
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
         {
@@ -23,9 +28,9 @@
       "pluginId": "postgres-plugin"
     },
     "dynamicBindingPathList": [],
-    "executeOnLoad": false,
+    "executeOnLoad": true,
     "name": "FetchTCs",
     "pageId": "Test cases",
-    "userSetOnLoad": false
+    "userSetOnLoad": true
   }
 }
