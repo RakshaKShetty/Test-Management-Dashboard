@@ -3,7 +3,7 @@
   "animateLoading": true,
   "autoFocus": false,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 62,
+  "bottomRow": 48,
   "boxShadow": "none",
   "defaultText": "{{data_table.selectedRow.tc_er}}",
   "dynamicBindingPathList": [
@@ -17,7 +17,7 @@
       "key": "defaultText"
     }
   ],
-  "dynamicHeight": "FIXED",
+  "dynamicHeight": "AUTO_HEIGHT",
   "dynamicTriggerPathList": [],
   "iconAlign": "left",
   "inputType": "MULTI_LINE_TEXT",
@@ -51,8 +51,9 @@
   "responsiveBehavior": "fill",
   "rightColumn": 63,
   "shouldAllowAutofill": false,
+  "shouldScrollContents": true,
   "showStepArrows": false,
-  "topRow": 48,
+  "topRow": 38,
   "type": "INPUT_WIDGET_V2",
   "version": 2,
   "widgetId": "omiisfu4uk",

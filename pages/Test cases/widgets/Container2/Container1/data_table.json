@@ -34,10 +34,10 @@
     "test_case_id",
     "test_case_name",
     "tc_desc",
-    "tlc_label_name",
-    "tc_autostatus"
+    "tc_autostatus",
+    "tlc_label_name"
   ],
-  "columnUpdatedAt": 1732530863727,
+  "columnUpdatedAt": 1732536033116,
   "columnWidthMap": {
     "tc_autostatus": 166,
     "tc_desc": 209,
