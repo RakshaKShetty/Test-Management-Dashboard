@@ -11,6 +11,9 @@
     },
     {
       "key": "borderRadius"
+    },
+    {
+      "key": "textColor"
     }
   ],
   "dynamicHeight": "AUTO_HEIGHT",
@@ -21,7 +24,7 @@
   "isLoading": false,
   "isVisible": true,
   "key": "v96mpiht2c",
-  "leftColumn": 1.5,
+  "leftColumn": 1,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 450,
@@ -36,11 +39,11 @@
   "parentId": "rkjlzqotww",
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 25.5,
+  "rightColumn": 26,
   "shouldTruncate": false,
   "text": "Add TestCase",
   "textAlign": "LEFT",
-  "textColor": "#231F20",
+  "textColor": "{{appsmith.theme.colors.primaryColor}}",
   "topRow": 1,
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",

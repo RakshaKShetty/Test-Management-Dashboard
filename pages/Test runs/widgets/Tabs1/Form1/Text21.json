@@ -14,9 +14,12 @@
     },
     {
       "key": "text"
+    },
+    {
+      "key": "textColor"
     }
   ],
-  "dynamicHeight": "AUTO_HEIGHT",
+  "dynamicHeight": "FIXED",
   "dynamicTriggerPathList": [],
   "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
   "fontSize": "1.25rem",
@@ -33,17 +36,15 @@
   "mobileRightColumn": 25.5,
   "mobileTopRow": 1,
   "needsErrorInfo": false,
-  "originalBottomRow": 5,
-  "originalTopRow": 1,
   "overflow": "NONE",
   "parentId": "g7eqbhv2n6",
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 51,
+  "rightColumn": 57,
   "shouldTruncate": false,
-  "text": "Update Test Run {{data_tableCopy.selectedRow.run_id}}",
+  "text": "Update Test Run {{data_tableCopy.selectedRow.run_id}} 🖊️",
   "textAlign": "LEFT",
-  "textColor": "#231F20",
+  "textColor": "{{appsmith.theme.colors.primaryColor}}",
   "topRow": 1,
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",

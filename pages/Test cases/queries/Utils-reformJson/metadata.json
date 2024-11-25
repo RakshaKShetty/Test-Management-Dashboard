@@ -1,6 +1,6 @@
 {
-  "gitSyncId": "673b2dfb8c02bc540a134478_79e4f0a7-9e39-48a6-8e10-784475a20784",
-  "id": "Test cases_Utils.generateColorsForArray",
+  "gitSyncId": "673b2dfb8c02bc540a134478_a78d59d1-3c8a-4fb5-a11f-c9ddc7652c96",
+  "id": "Test cases_Utils.reformJson",
   "pluginId": "js-plugin",
   "pluginType": "JS",
   "unpublishedAction": {
@@ -23,8 +23,8 @@
       }
     ],
     "executeOnLoad": false,
-    "fullyQualifiedName": "Utils.generateColorsForArray",
-    "name": "generateColorsForArray",
+    "fullyQualifiedName": "Utils.reformJson",
+    "name": "reformJson",
     "pageId": "Test cases",
     "userSetOnLoad": false
   }

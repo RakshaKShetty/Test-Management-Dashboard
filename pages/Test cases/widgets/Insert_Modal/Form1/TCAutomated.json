@@ -52,7 +52,7 @@
   "responsiveBehavior": "fill",
   "rightColumn": 63,
   "serverSideFiltering": false,
-  "sourceData": "[\n  {\n    \"name\": \"true\",\n    \"code\": \"true\"\n  },\n  {\n    \"name\": \"false\",\n    \"code\": \"false\"\n  }\n]",
+  "sourceData": "[\n  {\n    \"name\": \"true\",\n    \"code\": \"✅\"\n  },\n  {\n    \"name\": \"false\",\n    \"code\": \"❌\"\n  }\n]",
   "topRow": 68,
   "type": "SELECT_WIDGET",
   "version": 1,

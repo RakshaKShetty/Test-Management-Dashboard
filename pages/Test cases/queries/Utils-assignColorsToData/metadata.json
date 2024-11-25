@@ -1,6 +1,6 @@
 {
-  "gitSyncId": "673b2dfb8c02bc540a134478_79e4f0a7-9e39-48a6-8e10-784475a20784",
-  "id": "Test cases_Utils.generateColorsForArray",
+  "gitSyncId": "673b2dfb8c02bc540a134478_457bde8b-dc4e-40a9-b618-dbce20309f57",
+  "id": "Test cases_Utils.assignColorsToData",
   "pluginId": "js-plugin",
   "pluginType": "JS",
   "unpublishedAction": {
@@ -23,8 +23,8 @@
       }
     ],
     "executeOnLoad": false,
-    "fullyQualifiedName": "Utils.generateColorsForArray",
-    "name": "generateColorsForArray",
+    "fullyQualifiedName": "Utils.assignColorsToData",
+    "name": "assignColorsToData",
     "pageId": "Test cases",
     "userSetOnLoad": false
   }
