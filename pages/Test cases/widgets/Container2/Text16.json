@@ -30,7 +30,7 @@
   "parentRowSpace": 10,
   "rightColumn": 24,
   "shouldScrollContents": true,
-  "text": "Test Cases Repository ",
+  "text": "Test Case Repository ",
   "textAlign": "LEFT",
   "textColor": "{{appsmith.theme.colors.primaryColor}}",
   "topRow": 0,

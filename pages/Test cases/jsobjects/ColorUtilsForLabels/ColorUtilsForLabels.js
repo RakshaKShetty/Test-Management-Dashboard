@@ -373,7 +373,25 @@ export default {
   "Workspace Product": "#24c8f0",
   "Ballpark: XXS": "#842b2f",
   "Datasources": "#ae4064"
-}
+},
+	
+	requiredField ()
+	{
+		<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Color Example</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <span class="colored-text">ppp</span>
+</body>
+</html>
+
+
+	}
 
  
 	

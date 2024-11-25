@@ -3,7 +3,7 @@
   "animateLoading": true,
   "autoFocus": false,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 37,
+  "bottomRow": 32,
   "boxShadow": "none",
   "defaultText": "",
   "dynamicBindingPathList": [
@@ -15,6 +15,11 @@
     }
   ],
   "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [
+    {
+      "key": "labelTextColor"
+    }
+  ],
   "dynamicTriggerPathList": [],
   "iconAlign": "left",
   "inputType": "MULTI_LINE_TEXT",
@@ -27,6 +32,7 @@
   "labelAlignment": "left",
   "labelPosition": "Top",
   "labelStyle": "",
+  "labelTextColor": "",
   "labelTextSize": "0.875rem",
   "labelWidth": 5,
   "leftColumn": 0,
@@ -49,7 +55,7 @@
   "rightColumn": 63,
   "shouldAllowAutofill": false,
   "showStepArrows": false,
-  "topRow": 23,
+  "topRow": 19,
   "type": "INPUT_WIDGET_V2",
   "validation": "",
   "version": 2,

@@ -3,7 +3,8 @@
   "animateLoading": true,
   "autoFocus": false,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 60,
+  "bottomRow": 63,
+  "bottomRowBeforeCollapse": 8,
   "boxShadow": "none",
   "defaultText": "",
   "dynamicBindingPathList": [
@@ -12,18 +13,26 @@
     },
     {
       "key": "borderRadius"
+    },
+    {
+      "key": "isVisible"
     }
   ],
-  "dynamicHeight": "FIXED",
+  "dynamicHeight": "AUTO_HEIGHT",
+  "dynamicPropertyPathList": [
+    {
+      "key": "isVisible"
+    }
+  ],
   "dynamicTriggerPathList": [],
   "iconAlign": "left",
   "inputType": "TEXT",
   "isDisabled": false,
   "isLoading": false,
   "isRequired": false,
-  "isVisible": true,
+  "isVisible": "{{Switch1.isSwitchedOn}}",
   "key": "meavdiv1tr",
-  "label": "Oracle App Link ",
+  "label": "Oracle App Link",
   "labelAlignment": "left",
   "labelPosition": "Top",
   "labelStyle": "",
@@ -38,21 +47,23 @@
   "mobileRightColumn": 28,
   "mobileTopRow": 21,
   "needsErrorInfo": false,
-  "originalBottomRow": 60,
-  "originalTopRow": 53,
-  "parentColumnSpace": 3.2421875,
+  "originalBottomRow": 63,
+  "originalTopRow": 56,
+  "parentColumnSpace": 2.05078125,
   "parentId": "rkjlzqotww",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "resetOnSubmit": true,
   "responsiveBehavior": "fill",
-  "rightColumn": 63,
+  "rightColumn": 33,
   "shouldAllowAutofill": false,
+  "shouldScrollContents": true,
   "showStepArrows": false,
-  "topRow": 53,
+  "topRow": 56,
+  "topRowBeforeCollapse": 4,
   "type": "INPUT_WIDGET_V2",
   "validation": "",
   "version": 2,
-  "widgetId": "yecw4tqqle",
+  "widgetId": "ni78k6fso4",
   "widgetName": "TC_OracleLink"
 }
