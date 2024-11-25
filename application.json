@@ -11,8 +11,8 @@
       "colorStyle": "theme",
       "logoAssetId": "",
       "logoConfiguration": "noLogoOrApplicationTitle",
-      "navStyle": "stacked",
-      "orientation": "top",
+      "navStyle": "sidebar",
+      "orientation": "side",
       "position": "static",
       "showNavbar": true,
       "showSignIn": false
@@ -53,8 +53,8 @@
       "colorStyle": "theme",
       "logoAssetId": "",
       "logoConfiguration": "noLogoOrApplicationTitle",
-      "navStyle": "stacked",
-      "orientation": "top",
+      "navStyle": "sidebar",
+      "orientation": "side",
       "position": "static",
       "showNavbar": true,
       "showSignIn": false
