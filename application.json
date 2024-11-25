@@ -10,12 +10,12 @@
     "navigationSetting": {
       "colorStyle": "theme",
       "logoAssetId": "",
-      "logoConfiguration": "noLogoOrApplicationTitle",
+      "logoConfiguration": "logoOnly",
       "navStyle": "sidebar",
       "orientation": "side",
       "position": "static",
       "showNavbar": true,
-      "showSignIn": false
+      "showSignIn": true
     },
     "themeSetting": {
       "appMaxWidth": "LARGE",
@@ -52,12 +52,12 @@
     "navigationSetting": {
       "colorStyle": "theme",
       "logoAssetId": "",
-      "logoConfiguration": "noLogoOrApplicationTitle",
+      "logoConfiguration": "logoOnly",
       "navStyle": "sidebar",
       "orientation": "side",
       "position": "static",
       "showNavbar": true,
-      "showSignIn": false
+      "showSignIn": true
     },
     "themeSetting": {
       "appMaxWidth": "LARGE",
