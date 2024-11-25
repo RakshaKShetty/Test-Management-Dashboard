@@ -1,10 +1,11 @@
 {
+  "backgroundColor": "#ffffff",
   "borderRadius": "0px",
   "bottomRow": 4,
   "boxShadow": "none",
   "dynamicBindingPathList": [
     {
-      "key": "fontFamily"
+      "key": "textColor"
     }
   ],
   "dynamicHeight": "FIXED",
@@ -14,7 +15,7 @@
     }
   ],
   "dynamicTriggerPathList": [],
-  "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
+  "fontFamily": "System Default",
   "fontSize": "1.5rem",
   "fontStyle": "BOLD",
   "isLoading": false,
@@ -25,12 +26,12 @@
   "minDynamicHeight": 4,
   "overflow": "NONE",
   "parentColumnSpace": 11.78515625,
-  "parentId": "tngnza05pu",
+  "parentId": "oumyepm2wc",
   "parentRowSpace": 10,
-  "rightColumn": 39,
-  "text": "Test Cases Repository",
+  "rightColumn": 20,
+  "text": "Test Cases Repository ",
   "textAlign": "LEFT",
-  "textColor": "#231F20",
+  "textColor": "{{appsmith.theme.colors.primaryColor}}",
   "topRow": 0,
   "type": "TEXT_WIDGET",
   "version": 1,

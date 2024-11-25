@@ -4,7 +4,7 @@
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 85,
   "boxShadow": "none",
-  "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( data_table.selectedRow.tc_autostatus.toString()))(TCAutomatedCopy.options, TCAutomatedCopy.serverSideFiltering) }}",
+  "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( Utils.autoStatus[data_table.selectedRow.tc_autostatus]))(TCAutomatedCopy.options, TCAutomatedCopy.serverSideFiltering) }}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"

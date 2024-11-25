@@ -1,0 +1,39 @@
+{
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 4,
+  "boxShadow": "none",
+  "defaultImage": "https://www.google.com/imgres?q=test%20case%20repository%20icon&imgurl=https%3A%2F%2Fcdn-icons-png.flaticon.com%2F512%2F8422%2F8422384.png&imgrefurl=https%3A%2F%2Fwww.flaticon.com%2Ffree-icon%2Ftest-cases_8422384&docid=O0Djm-ToHdEg4M&tbnid=DucPbHtJ8QqKyM&vet=12ahUKEwjLj-arm_eJAxVrh68BHRFXHpQQM3oECBsQAA..i&w=512&h=512&hcb=2&ved=2ahUKEwjLj-arm_eJAxVrh68BHRFXHpQQM3oECBsQAA",
+  "dynamicBindingPathList": [
+    {
+      "key": "borderRadius"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "enableDownload": false,
+  "enableRotation": false,
+  "flexVerticalAlignment": "start",
+  "image": "",
+  "imageShape": "RECTANGLE",
+  "isLoading": false,
+  "isVisible": true,
+  "key": "gmw26ieapu",
+  "leftColumn": 20,
+  "maxZoomLevel": 1,
+  "mobileBottomRow": 10,
+  "mobileLeftColumn": 20,
+  "mobileRightColumn": 32,
+  "mobileTopRow": 0,
+  "needsErrorInfo": false,
+  "objectFit": "cover",
+  "parentColumnSpace": 12.75,
+  "parentId": "oumyepm2wc",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "rightColumn": 27,
+  "topRow": 0,
+  "type": "IMAGE_WIDGET",
+  "version": 1,
+  "widgetId": "1bw230qri9",
+  "widgetName": "Image1"
+}

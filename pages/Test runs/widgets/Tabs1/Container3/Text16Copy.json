@@ -5,6 +5,9 @@
   "dynamicBindingPathList": [
     {
       "key": "fontFamily"
+    },
+    {
+      "key": "textColor"
     }
   ],
   "dynamicHeight": "FIXED",
@@ -30,7 +33,7 @@
   "rightColumn": 38,
   "text": "All Test Runs",
   "textAlign": "LEFT",
-  "textColor": "#231F20",
+  "textColor": "{{appsmith.theme.colors.primaryColor}}",
   "topRow": 0,
   "type": "TEXT_WIDGET",
   "version": 1,

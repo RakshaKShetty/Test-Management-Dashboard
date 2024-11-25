@@ -2,7 +2,7 @@
   "accentColor": "{{appsmith.theme.colors.primaryColor}}",
   "animateLoading": true,
   "borderColor": "#E0DEDE",
-  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "borderRadius": "0px",
   "borderWidth": "1",
   "bottomRow": 81,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
@@ -59,9 +59,6 @@
       "key": "accentColor"
     },
     {
-      "key": "borderRadius"
-    },
-    {
       "key": "boxShadow"
     },
     {
@@ -110,6 +107,9 @@
     },
     {
       "key": "primaryColumns.tc_status.onOptionChange"
+    },
+    {
+      "key": "primaryColumns.tc_status.cellBackground"
     }
   ],
   "dynamicTriggerPathList": [
