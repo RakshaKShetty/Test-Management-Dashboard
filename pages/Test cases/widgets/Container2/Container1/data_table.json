@@ -34,18 +34,18 @@
     "test_case_id",
     "test_case_name",
     "tc_desc",
-    "tc_autostatus",
-    "tlc_label_name"
+    "tlc_label_name",
+    "tc_autostatus"
   ],
-  "columnUpdatedAt": 1732536033116,
+  "columnUpdatedAt": 1732540655112,
   "columnWidthMap": {
-    "tc_autostatus": 166,
-    "tc_desc": 209,
+    "tc_autostatus": 193,
+    "tc_desc": 341,
     "tc_er": 169,
     "tc_steps": 194,
     "test_case_id": 73.00000000000001,
-    "test_case_name": 197,
-    "tlc_label_name": 180.90625
+    "test_case_name": 226,
+    "tlc_label_name": 212.1875
   },
   "compactMode": "DEFAULT",
   "defaultPageSize": 0,
