@@ -1,7 +1,7 @@
 {
   "backgroundColor": "#ffffff",
   "borderRadius": "0px",
-  "bottomRow": 4,
+  "bottomRow": 5,
   "boxShadow": "none",
   "dynamicBindingPathList": [
     {
@@ -30,7 +30,7 @@
   "parentRowSpace": 10,
   "rightColumn": 24,
   "shouldScrollContents": true,
-  "text": "Test Case Repository ",
+  "text": "All Test Cases",
   "textAlign": "LEFT",
   "textColor": "{{appsmith.theme.colors.primaryColor}}",
   "topRow": 0,

@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 4,
+  "bottomRow": 5,
   "boxShadow": "none",
   "defaultImage": "https://browserstack.wpenginepowered.com/wp-content/uploads/2024/01/Centralized-test-case-repository.svg",
   "dynamicBindingPathList": [

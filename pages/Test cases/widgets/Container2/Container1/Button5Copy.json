@@ -11,7 +11,11 @@
       "key": "buttonColor"
     }
   ],
-  "dynamicPropertyPathList": [],
+  "dynamicPropertyPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
   "dynamicTriggerPathList": [
     {
       "key": "onClick"
@@ -31,7 +35,7 @@
   "mobileRightColumn": 60,
   "mobileTopRow": 0,
   "needsErrorInfo": false,
-  "onClick": "{{showModal('Insert_Modal')}}",
+  "onClick": "{{JSObject1.fetchAllCases();}}",
   "parentColumnSpace": 7.45703125,
   "parentId": "tngnza05pu",
   "parentRowSpace": 10,
