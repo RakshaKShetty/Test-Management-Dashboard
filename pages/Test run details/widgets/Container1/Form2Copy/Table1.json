@@ -7,6 +7,7 @@
   "bottomRow": 81,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
   "canFreezeColumn": true,
+  "cellBackground": "",
   "childStylesheet": {
     "button": {
       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
@@ -99,14 +100,14 @@
     },
     {
       "key": "primaryColumns.tc_spec.computedValue"
+    },
+    {
+      "key": "primaryColumns.tc_status.cellBackground"
     }
   ],
   "dynamicPropertyPathList": [
     {
       "key": "tableData"
-    },
-    {
-      "key": "primaryColumns.tc_status.onOptionChange"
     },
     {
       "key": "primaryColumns.tc_status.cellBackground"
@@ -147,6 +148,7 @@
       "alias": "pr_number",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
+      "cellBackground": "",
       "columnType": "text",
       "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"pr_number\"]))}}",
       "currencyCode": "USD",
@@ -212,6 +214,7 @@
       "alias": "tc_desc",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
+      "cellBackground": "",
       "columnType": "text",
       "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"tc_desc\"]))}}",
       "currencyCode": "USD",
@@ -311,6 +314,7 @@
       "alias": "tc_name",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
+      "cellBackground": "",
       "columnType": "text",
       "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"tc_name\"]))}}",
       "currencyCode": "USD",
@@ -410,7 +414,7 @@
       "alias": "tc_status",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
-      "cellBackground": "#b1c9f2",
+      "cellBackground": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( cellBackground.status[currentRow.tc_status]))}}",
       "columnType": "select",
       "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow.tc_status))}}",
       "currencyCode": "USD",
@@ -432,7 +436,7 @@
       "label": "Status",
       "menuItemsSource": "STATIC",
       "notation": "standard",
-      "onOptionChange": "{{cellBackground.myFun1()}}",
+      "onOptionChange": "",
       "originalId": "tc_status",
       "resetFilterTextOnClose": false,
       "selectOptions": "[\n  {\n    \"label\": \"Not Started\",\n    \"value\": \"Not Started\"\n  },\n  {\n    \"label\": \"Passed\",\n    \"value\": \"Passed\"\n  },\n  {\n    \"label\": \"Failed\",\n    \"value\": \"Failed\"\n  },\n\t{\n    \"label\": \"Skipped\",\n    \"value\": \"Skipped\"\n  }\n]",
@@ -483,6 +487,7 @@
       "alias": "test_run_name",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
+      "cellBackground": "",
       "columnType": "text",
       "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"test_run_name\"]))}}",
       "currencyCode": "USD",
