@@ -1,0 +1,42 @@
+{
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "alignWidget": "LEFT",
+  "animateLoading": true,
+  "bottomRow": 54,
+  "boxShadow": "none",
+  "defaultSwitchState": false,
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    }
+  ],
+  "dynamicHeight": "AUTO_HEIGHT",
+  "dynamicTriggerPathList": [],
+  "isDisabled": false,
+  "isLoading": false,
+  "isVisible": true,
+  "key": "ysgiu3yiwh",
+  "label": "Do you have Oracle App Link ?",
+  "labelPosition": "Left",
+  "leftColumn": 0,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "mobileBottomRow": 53,
+  "mobileLeftColumn": 0,
+  "mobileRightColumn": 11,
+  "mobileTopRow": 49,
+  "needsErrorInfo": false,
+  "originalBottomRow": 65,
+  "originalTopRow": 61,
+  "parentColumnSpace": 2.05078125,
+  "parentId": "rkjlzqotww",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 33,
+  "topRow": 50,
+  "type": "SWITCH_WIDGET",
+  "version": 1,
+  "widgetId": "mg9t6tfkvw",
+  "widgetName": "Switch1"
+}

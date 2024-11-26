@@ -38,7 +38,7 @@
     "step": 62,
     "task": 245
   },
-  "columnUpdatedAt": 1730356171583,
+  "columnUpdatedAt": 1732605057645,
   "columnWidthMap": {
     "customColumn1": 114,
     "description": 262,
@@ -115,9 +115,6 @@
       "key": "primaryColumns.tlc_label_name.computedValue"
     },
     {
-      "key": "totalRecordsCount"
-    },
-    {
       "key": "primaryColumns.customColumn1.boxShadow"
     },
     {
@@ -179,8 +176,8 @@
   "onPageChange": "{{JSObject1.fetchAllCases()}}",
   "onSearchTextChanged": "",
   "onSort": "",
-  "originalBottomRow": 89,
-  "originalTopRow": 44,
+  "originalBottomRow": 90,
+  "originalTopRow": 45,
   "parentColumnSpace": 12.021583557128906,
   "parentId": "pctwlhlpqe",
   "parentRowSpace": 10,
@@ -231,7 +228,7 @@
       "allowSameOptionsInNewRow": true,
       "cellBackground": "",
       "columnType": "text",
-      "computedValue": "{{TestCase.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"tc_autostatus\"]))}}",
+      "computedValue": "{{TestCase.processedTableData.map((currentRow, currentIndex) => ( Utils.automatedStatusImage[currentRow.tc_autostatus]))}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,
@@ -349,7 +346,7 @@
       "isDiscardVisible": true,
       "isEditable": false,
       "isSaveVisible": true,
-      "isVisible": true,
+      "isVisible": false,
       "label": "Oracle App Link",
       "notation": "standard",
       "originalId": "tc_oraclelink",
@@ -383,7 +380,7 @@
       "isDiscardVisible": true,
       "isEditable": false,
       "isSaveVisible": true,
-      "isVisible": true,
+      "isVisible": false,
       "label": "Test Spec Name",
       "notation": "standard",
       "originalId": "tc_spec",
@@ -486,7 +483,7 @@
       "isEditable": false,
       "isSaveVisible": true,
       "isVisible": true,
-      "label": "TC Name",
+      "label": "TC Category",
       "notation": "standard",
       "originalId": "test_case_name",
       "sticky": "",
@@ -503,7 +500,7 @@
       "allowSameOptionsInNewRow": true,
       "cellBackground": "",
       "columnType": "text",
-      "computedValue": "{{TestCase.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"tlc_label_name\"]))}}",
+      "computedValue": "{{TestCase.processedTableData.map((currentRow, currentIndex) => ( currentRow.tlc_label_name.join(\", \")))}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,
@@ -533,14 +530,14 @@
     }
   },
   "renderMode": "CANVAS",
-  "rightColumn": 34,
+  "rightColumn": 32,
   "searchKey": "",
   "serverSidePaginationEnabled": true,
   "showInlineEditingOptionDropdown": true,
   "tableData": "{{JSObject1.fetchAllCases.data}}",
   "textSize": "0.875rem",
   "topRow": 44,
-  "totalRecordsCount": "{{TC_Count.data[0].count}}",
+  "totalRecordsCount": "",
   "type": "TABLE_WIDGET_V2",
   "version": 3,
   "verticalAlignment": "CENTER",

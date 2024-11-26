@@ -1,6 +1,6 @@
 {
   "borderRadius": "0px",
-  "bottomRow": 4,
+  "bottomRow": 5,
   "boxShadow": "none",
   "dynamicBindingPathList": [
     {
@@ -23,14 +23,14 @@
   "isLoading": false,
   "isVisible": "true",
   "labelTextSize": "0.875rem",
-  "leftColumn": 0,
+  "leftColumn": 3,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "overflow": "NONE",
   "parentColumnSpace": 2.666015625,
-  "parentId": "uzflbi47cs",
+  "parentId": "r3kwqkdm2d",
   "parentRowSpace": 10,
-  "rightColumn": 38,
+  "rightColumn": 20,
   "text": "All Test Runs",
   "textAlign": "LEFT",
   "textColor": "{{appsmith.theme.colors.primaryColor}}",

@@ -10,6 +10,10 @@
       {
         "name": "myVar1",
         "value": "['#ef4444', '#22c55e', '#fde047', '#d4d4d8']"
+      },
+      {
+        "name": "status",
+        "value": "{\n  \"Not Started\": \"#d4d4d8\",\n  \"Passed\": \"#22c55e\",\n  \"Failed\": \"#ef4444\",\n  \"Skipped\": \"#fde047\"\n}"
       }
     ]
   }

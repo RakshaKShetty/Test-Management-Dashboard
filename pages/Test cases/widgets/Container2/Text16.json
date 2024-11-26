@@ -1,7 +1,7 @@
 {
   "backgroundColor": "#ffffff",
   "borderRadius": "0px",
-  "bottomRow": 4,
+  "bottomRow": 5,
   "boxShadow": "none",
   "dynamicBindingPathList": [
     {
@@ -21,15 +21,16 @@
   "isLoading": false,
   "isVisible": "true",
   "labelTextSize": "0.875rem",
-  "leftColumn": 0,
+  "leftColumn": 4,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "overflow": "NONE",
   "parentColumnSpace": 11.78515625,
   "parentId": "oumyepm2wc",
   "parentRowSpace": 10,
-  "rightColumn": 20,
-  "text": "Test Cases Repository ",
+  "rightColumn": 24,
+  "shouldScrollContents": true,
+  "text": "All Test Cases",
   "textAlign": "LEFT",
   "textColor": "{{appsmith.theme.colors.primaryColor}}",
   "topRow": 0,

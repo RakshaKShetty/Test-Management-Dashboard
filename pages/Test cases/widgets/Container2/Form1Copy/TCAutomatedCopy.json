@@ -2,9 +2,9 @@
   "accentColor": "{{appsmith.theme.colors.primaryColor}}",
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 85,
+  "bottomRow": 66,
   "boxShadow": "none",
-  "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( Utils.autoStatus[data_table.selectedRow.tc_autostatus]))(TCAutomatedCopy.options, TCAutomatedCopy.serverSideFiltering) }}",
+  "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( data_table.selectedRow.tc_autostatus))(TCAutomatedCopy.options, TCAutomatedCopy.serverSideFiltering) }}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -45,8 +45,8 @@
   "needsErrorInfo": false,
   "optionLabel": "code",
   "optionValue": "code",
-  "originalBottomRow": 85,
-  "originalTopRow": 78,
+  "originalBottomRow": 66,
+  "originalTopRow": 59,
   "parentColumnSpace": 3.2421875,
   "parentId": "32irul4bjr",
   "parentRowSpace": 10,
@@ -55,8 +55,8 @@
   "responsiveBehavior": "fill",
   "rightColumn": 63,
   "serverSideFiltering": false,
-  "sourceData": "[\n  {\n    \"name\": \"false\",\n    \"code\": \"false\"\n  },\n  {\n    \"name\": \"true\",\n    \"code\": \"true\"\n  }\n]",
-  "topRow": 78,
+  "sourceData": "[\n  {\n    \"name\": \"true\",\n    \"code\": \"✅\"\n  },\n  {\n    \"name\": \"false\",\n    \"code\": \"❌\"\n  }\n]",
+  "topRow": 59,
   "type": "SELECT_WIDGET",
   "version": 1,
   "widgetId": "h1fp6of2on",

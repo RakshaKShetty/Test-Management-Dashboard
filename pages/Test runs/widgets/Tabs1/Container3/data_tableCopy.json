@@ -2,7 +2,7 @@
   "accentColor": "{{appsmith.theme.colors.primaryColor}}",
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 79,
+  "bottomRow": 82,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
   "childStylesheet": {
     "button": {
@@ -38,7 +38,7 @@
     "step": 62,
     "task": 245
   },
-  "columnUpdatedAt": 1729021582272,
+  "columnUpdatedAt": 1732604951789,
   "columnWidthMap": {
     "Owner": 94,
     "Priority": 120,
@@ -125,9 +125,6 @@
     },
     {
       "key": "primaryColumns.environment.computedValue"
-    },
-    {
-      "key": "totalRecordsCount"
     }
   ],
   "dynamicPropertyPathList": [
@@ -139,6 +136,9 @@
     },
     {
       "key": "primaryColumns.customColumn1.onClick"
+    },
+    {
+      "key": "textColor"
     }
   ],
   "dynamicTriggerPathList": [
@@ -172,7 +172,7 @@
   "labelTextSize": "0.875rem",
   "leftColumn": 0,
   "multiRowSelection": false,
-  "onPageChange": "{{Fetch_TRs.run();\nTR_Count.run()}}",
+  "onPageChange": "{{Fetch_TRs.run()}}",
   "onSearchTextChanged": "",
   "onSort": "",
   "parentColumnSpace": 2.666015625,
@@ -202,7 +202,7 @@
       "isDiscardVisible": true,
       "isEditable": false,
       "isSaveVisible": true,
-      "isVisible": true,
+      "isVisible": false,
       "label": "Browser",
       "notation": "standard",
       "originalId": "browser",
@@ -236,7 +236,7 @@
       "isDiscardVisible": true,
       "isEditable": false,
       "isSaveVisible": true,
-      "isVisible": true,
+      "isVisible": false,
       "label": "Created at",
       "notation": "standard",
       "originalId": "created_at",
@@ -270,7 +270,7 @@
       "isDiscardVisible": true,
       "isEditable": false,
       "isSaveVisible": true,
-      "isVisible": true,
+      "isVisible": false,
       "label": "Created by",
       "notation": "standard",
       "originalId": "created_by",
@@ -315,6 +315,7 @@
       "onClick": "{{navigateTo('Test run details', {\n  \"trid\": data_tableCopy.triggeredRow.run_id,\n  \"tr_name\": data_tableCopy.triggeredRow.run_name,\n  \"pr_number\": data_tableCopy.triggeredRow.pr_number,\n\t\n}, 'SAME_WINDOW');}}",
       "originalId": "customColumn1",
       "sticky": "right",
+      "textColor": "",
       "textSize": "0.875rem",
       "thousandSeparator": true,
       "validation": {},
@@ -411,7 +412,7 @@
       "isDiscardVisible": true,
       "isEditable": false,
       "isSaveVisible": true,
-      "isVisible": true,
+      "isVisible": false,
       "label": "OS",
       "notation": "standard",
       "originalId": "os",
@@ -445,7 +446,7 @@
       "isDiscardVisible": true,
       "isEditable": false,
       "isSaveVisible": true,
-      "isVisible": true,
+      "isVisible": false,
       "label": "PR Number",
       "notation": "standard",
       "originalId": "pr_number",
@@ -532,9 +533,10 @@
   "serverSidePaginationEnabled": true,
   "showInlineEditingOptionDropdown": true,
   "tableData": "{{Fetch_TRs.data}}",
+  "textColor": "{{}}",
   "textSize": "0.875rem",
-  "topRow": 6,
-  "totalRecordsCount": "{{TR_Count.data[0].count}}",
+  "topRow": 5,
+  "totalRecordsCount": "",
   "type": "TABLE_WIDGET_V2",
   "version": 3,
   "verticalAlignment": "CENTER",

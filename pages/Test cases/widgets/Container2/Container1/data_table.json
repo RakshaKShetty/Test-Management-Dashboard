@@ -1,11 +1,11 @@
 {
   "accentColor": "{{appsmith.theme.colors.primaryColor}}",
   "animateLoading": true,
-  "borderColor": "#E0DEDE",
+  "borderColor": "#ffffff",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": "1",
   "bottomRow": 102,
-  "boxShadow": "0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)",
+  "boxShadow": "0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)",
   "canFreezeColumn": true,
   "childStylesheet": {
     "button": {
@@ -34,22 +34,18 @@
     "test_case_id",
     "test_case_name",
     "tc_desc",
-    "tc_steps",
-    "tc_er",
-    "tc_autostatus",
     "tlc_label_name",
-    "tc_oraclelink",
-    "tc_spec"
+    "tc_autostatus"
   ],
-  "columnUpdatedAt": 1732529795414,
+  "columnUpdatedAt": 1732604857918,
   "columnWidthMap": {
-    "tc_autostatus": 122,
-    "tc_desc": 209,
+    "tc_autostatus": 241,
+    "tc_desc": 341,
     "tc_er": 169,
     "tc_steps": 194,
-    "test_case_id": 85.00000000000001,
-    "test_case_name": 213,
-    "tlc_label_name": 449.90625
+    "test_case_id": 73.00000000000001,
+    "test_case_name": 226,
+    "tlc_label_name": 184.1875
   },
   "compactMode": "DEFAULT",
   "defaultPageSize": 0,
@@ -97,9 +93,6 @@
     },
     {
       "key": "primaryColumns.tlc_label_name.buttonLabel"
-    },
-    {
-      "key": "primaryColumns.tlc_label_name.textColor"
     }
   ],
   "dynamicPropertyPathList": [
@@ -110,7 +103,10 @@
       "key": "onPageChange"
     },
     {
-      "key": "primaryColumns.tlc_label_name.textColor"
+      "key": "primaryColumns.tlc_label_name.textSize"
+    },
+    {
+      "key": "textSize"
     }
   ],
   "dynamicTriggerPathList": [
@@ -128,7 +124,7 @@
   "isLoading": false,
   "isSortable": true,
   "isVisible": true,
-  "isVisibleDownload": true,
+  "isVisibleDownload": false,
   "isVisibleFilters": false,
   "isVisiblePagination": true,
   "isVisibleSearch": true,
@@ -152,7 +148,7 @@
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
       "cellBackground": "",
-      "columnType": "image",
+      "columnType": "text",
       "computedValue": "{{data_table.processedTableData.map((currentRow, currentIndex) => ( Utils.automatedStatusImage[currentRow.tc_autostatus]))}}",
       "currencyCode": "USD",
       "customAlias": "",
@@ -176,7 +172,7 @@
       "notation": "standard",
       "originalId": "tc_autostatus",
       "sticky": "",
-      "textSize": "0.875rem",
+      "textSize": "0.9rem",
       "thousandSeparator": true,
       "validation": {},
       "verticalAlignment": "CENTER",
@@ -207,7 +203,7 @@
       "notation": "standard",
       "originalId": "tc_desc",
       "sticky": "",
-      "textSize": "0.875rem",
+      "textSize": "0.9rem",
       "thousandSeparator": true,
       "validation": {},
       "verticalAlignment": "CENTER",
@@ -238,7 +234,7 @@
       "notation": "standard",
       "originalId": "tc_er",
       "sticky": "",
-      "textSize": "0.875rem",
+      "textSize": "0.9rem",
       "thousandSeparator": true,
       "validation": {},
       "verticalAlignment": "CENTER",
@@ -272,7 +268,7 @@
       "originalId": "tc_oraclelink",
       "sticky": "",
       "textColor": "",
-      "textSize": "0.875rem",
+      "textSize": "0.9rem",
       "thousandSeparator": true,
       "validation": {},
       "verticalAlignment": "CENTER",
@@ -306,7 +302,7 @@
       "originalId": "tc_spec",
       "sticky": "",
       "textColor": "",
-      "textSize": "0.875rem",
+      "textSize": "0.9rem",
       "thousandSeparator": true,
       "validation": {},
       "verticalAlignment": "CENTER",
@@ -337,7 +333,7 @@
       "notation": "standard",
       "originalId": "tc_steps",
       "sticky": "",
-      "textSize": "0.875rem",
+      "textSize": "0.9rem",
       "thousandSeparator": true,
       "validation": {},
       "verticalAlignment": "CENTER",
@@ -368,7 +364,7 @@
       "notation": "standard",
       "originalId": "test_case_id",
       "sticky": "",
-      "textSize": "0.875rem",
+      "textSize": "0.9rem",
       "thousandSeparator": true,
       "validation": {},
       "verticalAlignment": "CENTER",
@@ -395,11 +391,11 @@
       "isEditable": false,
       "isSaveVisible": true,
       "isVisible": true,
-      "label": "TC Name",
+      "label": "TC Category",
       "notation": "standard",
       "originalId": "test_case_name",
       "sticky": "",
-      "textSize": "0.875rem",
+      "textSize": "0.9rem",
       "thousandSeparator": true,
       "validation": {},
       "verticalAlignment": "CENTER",
@@ -410,6 +406,7 @@
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
       "buttonLabel": "{{data_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"tlc_label_name\"]))}}",
+      "cellBackground": "",
       "columnType": "text",
       "computedValue": "{{data_table.processedTableData.map((currentRow, currentIndex) => ( currentRow.tlc_label_name.join(\", \")))}}",
       "currencyCode": "USD",
@@ -417,6 +414,7 @@
       "decimals": 0,
       "enableFilter": true,
       "enableSort": true,
+      "fontStyle": "",
       "horizontalAlignment": "LEFT",
       "id": "tlc_label_name",
       "index": 6,
@@ -432,8 +430,8 @@
       "notation": "standard",
       "originalId": "tlc_label_name",
       "sticky": "",
-      "textColor": "{{data_table.processedTableData.map((currentRow, currentIndex) => ( Utils.generateRandomColor(currentRow.tlc_label_name)))}}",
-      "textSize": "0.875rem",
+      "textColor": "",
+      "textSize": "0.9rem",
       "thousandSeparator": true,
       "validation": {},
       "verticalAlignment": "CENTER",
@@ -447,11 +445,11 @@
   "serverSidePaginationEnabled": true,
   "showInlineEditingOptionDropdown": true,
   "tableData": "{{JSObject1.fetchAllCases.data}}",
-  "textSize": "0.875rem",
+  "textSize": "0.9rem",
   "topRow": 12,
   "totalRecordsCount": "",
   "type": "TABLE_WIDGET_V2",
-  "variant": "VARIANT3",
+  "variant": "DEFAULT",
   "version": 2,
   "verticalAlignment": "CENTER",
   "widgetId": "12wl8kvkjf",

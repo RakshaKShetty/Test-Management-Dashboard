@@ -18,6 +18,11 @@
     }
   ],
   "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [
+    {
+      "key": "labelTextColor"
+    }
+  ],
   "dynamicTriggerPathList": [],
   "iconAlign": "left",
   "inputType": "TEXT",
@@ -26,10 +31,11 @@
   "isRequired": true,
   "isVisible": true,
   "key": "meavdiv1tr",
-  "label": "TC Name *",
+  "label": "TC Category *",
   "labelAlignment": "left",
   "labelPosition": "Top",
   "labelStyle": "",
+  "labelTextColor": "",
   "labelTextSize": "0.875rem",
   "labelWidth": 5,
   "leftColumn": 0,

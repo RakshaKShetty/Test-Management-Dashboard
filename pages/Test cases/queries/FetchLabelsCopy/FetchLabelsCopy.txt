@@ -1,0 +1,1 @@
+SELECT name FROM public."test_labels" order by label_id   ;
