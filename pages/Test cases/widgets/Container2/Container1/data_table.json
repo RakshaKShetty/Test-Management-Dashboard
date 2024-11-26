@@ -37,15 +37,15 @@
     "tlc_label_name",
     "tc_autostatus"
   ],
-  "columnUpdatedAt": 1732540655112,
+  "columnUpdatedAt": 1732604857918,
   "columnWidthMap": {
-    "tc_autostatus": 193,
+    "tc_autostatus": 241,
     "tc_desc": 341,
     "tc_er": 169,
     "tc_steps": 194,
     "test_case_id": 73.00000000000001,
     "test_case_name": 226,
-    "tlc_label_name": 212.1875
+    "tlc_label_name": 184.1875
   },
   "compactMode": "DEFAULT",
   "defaultPageSize": 0,
@@ -93,9 +93,6 @@
     },
     {
       "key": "primaryColumns.tlc_label_name.buttonLabel"
-    },
-    {
-      "key": "primaryColumns.tlc_label_name.textColor"
     }
   ],
   "dynamicPropertyPathList": [
@@ -107,9 +104,6 @@
     },
     {
       "key": "primaryColumns.tlc_label_name.textSize"
-    },
-    {
-      "key": "primaryColumns.tlc_label_name.textColor"
     },
     {
       "key": "textSize"
@@ -130,7 +124,7 @@
   "isLoading": false,
   "isSortable": true,
   "isVisible": true,
-  "isVisibleDownload": true,
+  "isVisibleDownload": false,
   "isVisibleFilters": false,
   "isVisiblePagination": true,
   "isVisibleSearch": true,
@@ -436,7 +430,7 @@
       "notation": "standard",
       "originalId": "tlc_label_name",
       "sticky": "",
-      "textColor": "{{data_table.processedTableData.map((currentRow, currentIndex) => ( Utils.generateRandomColor()))}}",
+      "textColor": "",
       "textSize": "0.9rem",
       "thousandSeparator": true,
       "validation": {},
