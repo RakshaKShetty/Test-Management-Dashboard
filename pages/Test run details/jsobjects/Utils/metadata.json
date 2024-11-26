@@ -1,0 +1,28 @@
+{
+  "gitSyncId": "673b2dfb8c02bc540a134478_efdc40b1-d3b3-46f1-9720-d6ed0372b464",
+  "id": "Test run details_Utils",
+  "unpublishedCollection": {
+    "name": "Utils",
+    "pageId": "Test run details",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": [
+      {
+        "name": "automatedStatusColors",
+        "value": "{\n  \"false\": \"#FF0000\",\n  \"true\": \"#00FF00\",\n  \"na\": \"#F5F5F5\"\n}"
+      },
+      {
+        "name": "automatedStatusIcon",
+        "value": "{\n  \"false\": \"cross\",\n  \"true\": \"confirm\",\n  \"na\": \"cross\"\n}"
+      },
+      {
+        "name": "automatedStatusImage",
+        "value": "{\n  \"false\": \"❌\",\n  \"true\": \"✅\",\n  \"na\": \"\"\n}"
+      },
+      {
+        "name": "autoStatus",
+        "value": "{\n  \"https://image.similarpng.com/very-thumbnail/2021/06/Cross-mark-icon-in-red-color-on-transparent-background-PNG.png\": \"false\",\n  \"https://image.similarpng.com/very-thumbnail/2021/06/Green-check-mark-icon-on-transparent-background-PNG.png\": \"true\"\n}"
+      }
+    ]
+  }
+}
