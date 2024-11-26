@@ -11,10 +11,10 @@
       "colorStyle": "theme",
       "logoAssetId": "",
       "logoConfiguration": "logoOnly",
-      "navStyle": "sidebar",
-      "orientation": "side",
+      "navStyle": "stacked",
+      "orientation": "top",
       "position": "static",
-      "showNavbar": true,
+      "showNavbar": false,
       "showSignIn": true
     },
     "themeSetting": {
@@ -53,10 +53,10 @@
       "colorStyle": "theme",
       "logoAssetId": "",
       "logoConfiguration": "logoOnly",
-      "navStyle": "sidebar",
-      "orientation": "side",
+      "navStyle": "stacked",
+      "orientation": "top",
       "position": "static",
-      "showNavbar": true,
+      "showNavbar": false,
       "showSignIn": true
     },
     "themeSetting": {
