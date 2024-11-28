@@ -25,7 +25,7 @@ export default {
 		for (let i=0 ; i < updatedTC.length ;i++)
 
 		{
-			UpdateTestRunCases.run({tcstatus:updatedTC[i].allFields.tc_status , trid: updatedTC[i].allFields.trc_id})
+		await	UpdateTestRunCases.run({tcstatus:updatedTC[i].allFields.tc_status , trid: updatedTC[i].allFields.trc_id})
 		} 
 
 	},
