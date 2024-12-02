@@ -28,7 +28,7 @@ async insertTC () {
 		{
 	await	InsertLabelswithTC.run({caseID: a , labelname: labels[i].toString()}) 
 		 } 
-		JSObject1.fetchAllCases()
+	await	JSObject1.fetchAllCases()
 	
 	
 	}
