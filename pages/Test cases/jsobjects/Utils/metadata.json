@@ -20,8 +20,8 @@
         "value": "{\n  \"false\": \"❌\",\n  \"true\": \"✅\",\n  \"na\": \"\"\n}"
       },
       {
-        "name": "autoStatus",
-        "value": "{\n  \"https://image.similarpng.com/very-thumbnail/2021/06/Cross-mark-icon-in-red-color-on-transparent-background-PNG.png\": \"false\",\n  \"https://image.similarpng.com/very-thumbnail/2021/06/Green-check-mark-icon-on-transparent-background-PNG.png\": \"true\"\n}"
+        "name": "automatedStatusImageReverseLookup",
+        "value": "{\n  \"❌\": \"false\",\n  \"✅\": \"true\"\n}"
       }
     ]
   }

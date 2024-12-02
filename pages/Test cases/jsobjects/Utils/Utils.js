@@ -14,15 +14,16 @@ export default {
 		"true": "✅",
 		"na": ""
 	},
-	autoStatus:
-	{
-
-		"https://image.similarpng.com/very-thumbnail/2021/06/Cross-mark-icon-in-red-color-on-transparent-background-PNG.png" : "false",
-		"https://image.similarpng.com/very-thumbnail/2021/06/Green-check-mark-icon-on-transparent-background-PNG.png" : "true",	
+	
+	
+	automatedStatusImageReverseLookup: {
+		 "❌" : "false",
+	"✅":	"true"
+		
 	},
 
 
-	generateRandomColor() {
+	generateRandomColor () {
 		return '#' + Math.floor(Math.random() * 16777215).toString(16).padStart(6, '0');
 	},
 	generateColorForString(inputString) {

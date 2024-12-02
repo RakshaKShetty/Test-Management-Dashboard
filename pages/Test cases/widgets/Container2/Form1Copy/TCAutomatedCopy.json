@@ -4,7 +4,7 @@
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 66,
   "boxShadow": "none",
-  "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( data_table.selectedRow.tc_autostatus))(TCAutomatedCopy.options, TCAutomatedCopy.serverSideFiltering) }}",
+  "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( Utils.automatedStatusImageReverseLookup[data_table.selectedRow.tc_autostatus]))(TCAutomatedCopy.options, TCAutomatedCopy.serverSideFiltering) }}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -44,7 +44,7 @@
   "mobileTopRow": 23,
   "needsErrorInfo": false,
   "optionLabel": "code",
-  "optionValue": "code",
+  "optionValue": "name",
   "originalBottomRow": 66,
   "originalTopRow": 59,
   "parentColumnSpace": 3.2421875,
