@@ -22,10 +22,10 @@
         "key": "body"
       }
     ],
-    "executeOnLoad": false,
     "fullyQualifiedName": "Utils.generateRandomColor",
     "name": "generateRandomColor",
     "pageId": "Test run details",
+    "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }
 }

@@ -22,10 +22,10 @@
         "key": "body"
       }
     ],
-    "executeOnLoad": false,
     "fullyQualifiedName": "Utils.generateColorsForArray",
     "name": "generateColorsForArray",
     "pageId": "Test run details",
+    "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }
 }

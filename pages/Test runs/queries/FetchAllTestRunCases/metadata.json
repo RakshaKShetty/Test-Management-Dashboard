@@ -23,9 +23,9 @@
       "pluginId": "postgres-plugin"
     },
     "dynamicBindingPathList": [],
-    "executeOnLoad": false,
     "name": "FetchAllTestRunCases",
     "pageId": "Test runs",
+    "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }
 }

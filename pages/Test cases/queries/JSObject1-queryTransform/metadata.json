@@ -27,10 +27,10 @@
         "key": "body"
       }
     ],
-    "executeOnLoad": true,
     "fullyQualifiedName": "JSObject1.queryTransform",
     "name": "queryTransform",
     "pageId": "Test cases",
+    "runBehaviour": "ON_PAGE_LOAD",
     "userSetOnLoad": true
   }
 }

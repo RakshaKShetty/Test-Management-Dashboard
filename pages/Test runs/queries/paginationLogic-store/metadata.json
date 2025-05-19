@@ -22,10 +22,10 @@
         "key": "body"
       }
     ],
-    "executeOnLoad": false,
     "fullyQualifiedName": "paginationLogic.store",
     "name": "store",
     "pageId": "Test runs",
+    "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }
 }

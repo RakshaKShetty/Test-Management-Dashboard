@@ -27,9 +27,9 @@
         "key": "body"
       }
     ],
-    "executeOnLoad": false,
     "name": "InsertTCinTR",
     "pageId": "Test runs",
+    "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }
 }

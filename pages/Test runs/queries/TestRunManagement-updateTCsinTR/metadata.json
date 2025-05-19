@@ -23,10 +23,10 @@
         "key": "body"
       }
     ],
-    "executeOnLoad": false,
     "fullyQualifiedName": "TestRunManagement.updateTCsinTR",
     "name": "updateTCsinTR",
     "pageId": "Test runs",
+    "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }
 }

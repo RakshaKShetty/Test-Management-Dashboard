@@ -27,9 +27,9 @@
         "key": "body"
       }
     ],
-    "executeOnLoad": false,
     "name": "InsertLabelswithTC",
     "pageId": "Test cases",
+    "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }
 }

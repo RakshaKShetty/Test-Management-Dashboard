@@ -23,9 +23,9 @@
       "pluginId": "postgres-plugin"
     },
     "dynamicBindingPathList": [],
-    "executeOnLoad": false,
     "name": "FetchLabelsCopy",
     "pageId": "Test cases",
+    "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }
 }

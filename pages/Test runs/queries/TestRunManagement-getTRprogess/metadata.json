@@ -26,10 +26,10 @@
         "key": "body"
       }
     ],
-    "executeOnLoad": false,
     "fullyQualifiedName": "TestRunManagement.getTRprogess",
     "name": "getTRprogess",
     "pageId": "Test runs",
+    "runBehaviour": "MANUAL",
     "userSetOnLoad": true
   }
 }

@@ -26,10 +26,10 @@
         "key": "body"
       }
     ],
-    "executeOnLoad": false,
     "fullyQualifiedName": "Utils.generateColorForString",
     "name": "generateColorForString",
     "pageId": "Test cases",
+    "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }
 }

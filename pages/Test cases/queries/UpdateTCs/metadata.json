@@ -27,9 +27,9 @@
         "key": "body"
       }
     ],
-    "executeOnLoad": false,
     "name": "UpdateTCs",
     "pageId": "Test cases",
+    "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }
 }

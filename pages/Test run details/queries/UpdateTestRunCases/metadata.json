@@ -27,9 +27,9 @@
         "key": "body"
       }
     ],
-    "executeOnLoad": false,
     "name": "UpdateTestRunCases",
     "pageId": "Test run details",
+    "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }
 }

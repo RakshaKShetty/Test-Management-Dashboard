@@ -22,10 +22,10 @@
         "key": "body"
       }
     ],
-    "executeOnLoad": false,
     "fullyQualifiedName": "Utils.reformJson",
     "name": "reformJson",
     "pageId": "Test run details",
+    "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }
 }

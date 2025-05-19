@@ -22,10 +22,10 @@
         "key": "body"
       }
     ],
-    "executeOnLoad": false,
     "fullyQualifiedName": "Utils.assignColorsToData",
     "name": "assignColorsToData",
     "pageId": "Test runs",
+    "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }
 }
